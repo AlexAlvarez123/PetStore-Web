@@ -1,0 +1,598 @@
+<html lang="en"><head>
+		<title>Proveedores | Fixed | Demo - De la libreta a la computadora</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="../images/favicon.png">
+        <link rel="apple-touch-icon" href="images/logos_login/1_logo.png">
+        <link rel="apple-touch-icon-precomposed" href="images/logos_login/1_logo.png">
+		<meta name="msapplication-TileImage" content="images/logos_login/1_logo.png">
+
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/bootstrap.css?2.3">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/materialadmin.css?v=2.5.5">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/font-awesome.min.css?1422529194">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/material-design-iconic-font.min.css?1421434286">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/rickshaw/rickshaw.css?1422792967">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/morris/morris.core.css?1420463396">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/DataTables/jquery.dataTables.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/DataTables/TableTools.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/wizard/wizard.css?1425466601">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/bootstrap-datepicker/datepicker3.css?1424887858">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/toastr/toastr.css?1425466569">
+		<link type="text/css" rel="stylesheet" href="assets/css/html5imageupload.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/summernote/summernote.css?1425218701">
+		<link type="text/css" rel="stylesheet" href="assets/js/libs/summernote/summernote.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-tour.min.css">
+
+		<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-RWVFXV65DE&amp;l=dataLayer&amp;cx=c"></script><script src="assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
+ 		<script src="assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+ 		<script src="assets/js/libs/bootstrap/bootstrap.min.js"></script>
+ 		<script src="assets/js/libs/bootstrap-multiselect/bootstrap-multiselect.js?v=1.3"></script>
+ 		<script src="assets/js/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+ 		<script src="assets/js/libs/spin.js/spin.min.js"></script><style type="text/css"></style>
+ 		<script src="assets/js/libs/autosize/jquery.autosize.min.js"></script>
+ 		<script src="assets/js/libs/moment/moment.min.js"></script>
+ 		<script src="assets/js/libs/flot/jquery.flot.min.js"></script>
+ 		<script src="assets/js/libs/flot/jquery.flot.time.min.js"></script>
+ 		<script src="assets/js/libs/flot/jquery.flot.resize.min.js"></script>
+ 		<script src="assets/js/libs/flot/jquery.flot.orderBars.js"></script>
+ 		<script src="assets/js/libs/flot/jquery.flot.pie.js"></script>
+ 		<script src="assets/js/libs/flot/curvedLines.js"></script>
+ 		<script src="assets/js/libs/jquery-knob/jquery.knob.min.js"></script>
+ 		<script src="assets/js/libs/sparkline/jquery.sparkline.min.js"></script>
+ 		<script src="assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+ 		<script src="assets/js/libs/d3/d3.min.js"></script>
+ 		<script src="assets/js/libs/d3/d3.v3.js"></script>
+ 		<script src="assets/js/libs/jquery.maskMoney.js?v=1.2"></script>
+ 		<script src="assets/js/libs/jquery.number.min.js"></script>
+ 		<script src="assets/js/libs/inputmask/jquery.inputmask.bundle.min.js"></script>
+ 		<script src="assets/js/libs/DataTables/jquery.dataTables.min.js"></script>
+ 		<script src="assets/js/libs/wizard/jquery.bootstrap.wizard.min.js"></script>
+ 		<script src="assets/js/libs/jquery-ui-sortable/jquery-ui.min.js"></script>
+ 		<script src="assets/js/libs/summernote/summernote.min.js"></script>
+ 		<script src="assets/js/libs/toastr/toastr.js"></script>
+ 		<script src="assets/js/libs/nestable/jquery.nestable.js"></script>
+		<script src="assets/js/libs/rickshaw/rickshaw.min.js"></script>
+		<script src="assets/js/core/source/App.js"></script>
+		<script src="assets/js/core/source/AppNavigation.js"></script>
+		<script src="assets/js/core/source/AppOffcanvas.js"></script>
+		<script src="assets/js/core/source/AppCard.js"></script>
+		<script src="assets/js/core/source/AppForm.js"></script>
+		<script src="assets/js/core/source/AppNavSearch.js"></script>
+		<script src="assets/js/core/source/AppVendor.js"></script>
+		<script src="assets/js/libs/html5imageupload/html5imageupload.js"></script>
+		<script src="assets/js/libs/bootstrap-tour.min.js"></script>
+
+ 		<script src="assets/js/javascript.js?v=2.5.5"></script>
+
+		<script type="text/javascript">
+		var pais = 1;
+		</script>
+
+		<script type="text/javascript" src="assets/js/scriptsNotification.js?v=2.5.5"></script>
+	<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><script id="freshchat-js-sdk" async="" src="https://wchat.freshchat.com/js/widget.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><link href="https://wchat.freshchat.com/widget/css/widget.css?t=1698292021456" rel="stylesheet"></head>
+
+	<body class="menubar-hoverable header-fixed menubar-first option-entidades menubar-pin">
+		<div id="preLoader" style="position: fixed; background: rgb(255, 255, 255); width: 100%; height: 100%; z-index: 9999; opacity: 0.9; padding-top: 200px; display: none;">
+			<span id="txtPreLoader">Cargando...</span>
+            <img src="/images/logos_login/1_logo.png" alt="Logo">
+		</div>
+		<header id="header">
+			<div class="headerbar">
+				<div style="position: absolute; height: 60px;">
+											<span class="text-lg text-bold text-primary"><a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);"><i class="fa fa-bars"></i></a>Demo - De la libreta a la computadora | Sin factura electrónica</span>
+					
+					<div id="containerAyudas" class="card transparente" style="float:right;margin-left:25px;margin-top:10px;display:none">
+						<ul class="list-unstyled">
+							<li class="dropdown">
+								<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown" aria-expanded="false">
+									<span class="btn btn-info" id="btnAyuda"><i class="md md-help"></i>Ayudas</span>
+								</a>
+								<ul class="dropdown-menu animation-dock" id="menuAyudas">
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="headerbar-right">
+										<ul class="header-nav header-nav-options">
+												<li class="dropdown hidden-xs">
+							<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown" aria-expanded="false">
+								<i class="md md-done-all"></i>							</a>
+							<ul class="dropdown-menu animation-expand"></ul>
+						</li>
+						<li class="dropdown hidden-xs">
+							<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-bell"></i>							</a>
+							<ul class="dropdown-menu animation-expand"></ul>
+						</li>
+						<li class="dropdown hidden-xs">
+							<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-warning"></i>							</a>
+							<ul class="dropdown-menu animation-expand"></ul>
+						</li>
+					</ul>
+					<ul class="header-nav header-nav-profile">
+						<li class="dropdown">
+							<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
+								<span class="profile-info">
+									Admin Fixed									<small>Administrador</small>
+									<small style="color: red; opacity: 1;">Salir - Cerrar sesión</small>								</span>
+							</a>
+							<ul class="dropdown-menu animation-dock">
+								<li class="dropdown-header">Opciones</li>
+								<li><a href="index.php?option=perfil">Mis datos</a></li>
+								<li><a href="index.php?option=mi-cuenta">MI cuenta</a></li>								<li class="divider"></li>
+								<li><a href="logout.php"><i class="fa fa-fw fa-power-off text-danger"></i> Cerrar sesión</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="base">
+			<div id="content">
+				<section>
+					<div class="section-body">
+						<div id="avisoNavegador"></div>
+						
+<div class="row">
+	<div class="col-md-12">
+    </div>
+	<div class="col-md-12">
+    <div class="card transparente">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#Agregar">Agregar Proveedor</button>
+    </div>
+</div>
+
+<div class="modal fade" id="Agregar" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="formModalLabel">Agregar Proveedor</h4>
+            </div>
+            <form id="formAgregarCliente" class="form-horizontal" role="form" method="post" action="index.php?option=entidades&amp;tipo=proveedores">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label for="Razón-Social" class="control-label">Tipo de documento</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <select class="multiselect" name="tipo_documento" onchange="checkDocumento('formAgregarCliente')" style="display: none;">
+                                <option value="2" selected="">RUT (Uruguay)
+                                </option><option value="3">Cédula de Identidad (Uruguay)</option>
+                                <option value="4">Otros</option>
+                                <option value="5">Pasaporte</option>
+                                <option value="6">DNI (Argentina, Brasil, Chile o Paraguay)</option>
+                                <option value="7">NIFE - Número de identificación fiscal extranjero</option>
+                            </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="RUT (Uruguay)
+                                ">RUT (Uruguay)
+                                 <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li class="active"><a href="javascript:void(0);"><label class="radio"><input type="radio" value="2"> RUT (Uruguay)
+                                </label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="3"> Cédula de Identidad (Uruguay)</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="4"> Otros</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="5"> Pasaporte</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="6"> DNI (Argentina, Brasil, Chile o Paraguay)</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="7"> NIFE - Número de identificación fiscal extranjero</label></a></li></ul></div>
+                        </div>
+                    </div>
+                    <div id="camposDocumentos">
+                        <div id="documento_2" style="display: block;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="RUT" class="control-label">RUT</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="RUT" id="RUT" class="form-control " value="" placeholder="RUT" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div><div id="validadorRUT"></div></div>
+                        <div id="documento_3" style="display: none;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Número-de-cédula" class="control-label">Número de cédula</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Número-de-cédula" id="Número-de-cédula" class="form-control " value="" placeholder="Número de cédula" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div><div id="validadorCedula"></div></div>
+                        <div id="documento_4" style="display: none;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Número-de-documento" class="control-label">Número de documento</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Número-de-documento" id="Número-de-documento" class="form-control " value="" placeholder="Número de documento" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div></div>
+                        <div id="documento_5" style="display: none;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Número-de-pasaporte" class="control-label">Número de pasaporte</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Número-de-pasaporte" id="Número-de-pasaporte" class="form-control " value="" placeholder="Número de pasaporte" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div></div>
+                        <div id="documento_6" style="display: none;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Número-DNI" class="control-label">Número DNI</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Número-DNI" id="Número-DNI" class="form-control " value="" placeholder="Número DNI" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div></div>
+                        <div id="documento_7" style="display: none;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Número-NIFE" class="control-label">Número NIFE</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Número-NIFE" id="Número-NIFE" class="form-control " value="" placeholder="Número NIFE" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div></div>
+                    </div>
+                    <div class="form-group" id="paisDesplegable" style="display: none;">
+                        <div class="col-sm-3">
+                            <label class="control-label">País</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <select class="multiselect" name="paisDesplegable" style="display: none;">
+                                <option value="AR">Argentina</option>
+                                <option value="BR">Brasil</option>
+                                <option value="CL">Chile</option>
+                                <option value="PY">Paraguay</option>
+                            </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Argentina">Argentina <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li class="active"><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AR"> Argentina</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BR"> Brasil</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CL"> Chile</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PY"> Paraguay</label></a></li></ul></div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="paisesISO" style="display: none;">
+                        <div class="col-sm-3">
+                            <label for="País" class="control-label">País</label>
+                        </div>
+                        <div class="col-sm-7" id="paisContenedor">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Razón-Social" class="control-label">Razón Social</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Razón-Social" id="Razón-Social" class="form-control " value="" placeholder="Razón Social" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Nombre" class="control-label">Nombre</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Nombre" id="Nombre" class="form-control " value="" placeholder="Nombre" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Dirección" class="control-label">Dirección</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Dirección" id="Dirección" class="form-control " value="" placeholder="Dirección" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Localidad" class="control-label">Localidad</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Localidad" id="Localidad" class="form-control " value="Montevideo" placeholder="Localidad" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Departamento" class="control-label">Departamento</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Departamento" id="Departamento" class="form-control " value="Montevideo" placeholder="Departamento" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label for="Dirección" class="control-label">Domicilio entrega<br><small>(si es diferente a la de facturación)</small></label>
+                        </div>
+                        <div class="col-sm-7">
+                            <input type="text" name="Dirección-entrega" id="Dirección-entrega" class="form-control " value="" placeholder="Dirección entega (si es diferente a la de facturación)" autocomplete="off"><div class="form-control-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Descuento" class="control-label">Descuento</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Descuento" id="Descuento" class="form-control " value="" placeholder="Descuento" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Mail-envio-factura" class="control-label">Mail envio factura</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Mail-envio-factura" id="Mail-envio-factura" class="form-control " value="" placeholder="Mail envio factura" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label for="esproveedor" class="control-label">Es proveedor</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="checkbox checkbox-styled">
+                                <label>
+                                    <input type="checkbox" name="esproveedor" value="1" checked="checked" autocomplete="off"><span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label for="escliente" class="control-label">Es cliente</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="checkbox checkbox-styled">
+                                <label>
+                                    <input type="checkbox" name="escliente" value="1" onclick="$('#div-listas-cliente').slideToggle(200);" autocomplete="off"><span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="form-group" id="contenedorVendedorAdd" style="display: none;">
+                        <div class="col-sm-3">
+                            <label class="control-label">Vendedor por defecto</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <select class="multiselect" name="vendedor" style="display: none;">
+                                <option value="0">Sin asignar</option>
+                                <option value="2">ernesto - Ernesto  Andreoli</option>                            </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Sin asignar">Sin asignar <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li class="active"><a href="javascript:void(0);"><label class="radio"><input type="radio" value="0"> Sin asignar</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="2"> ernesto - Ernesto  Andreoli</label></a></li></ul></div>
+                        </div>
+                    </div>
+                    <div id="div-listas-cliente" style="display: none;">
+                                                <div class="form-group" style="display: none;">
+                            <div class="col-sm-3">
+                                <label for="email1" class="control-label">Listas de precios productos</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <select name="listaPreciosProductos[]" id="listaPreciosProductos" multiple="multiple" style="display: none;">
+                                    <option value="1">Bsica</option>                                </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Seleccionar">Seleccionar <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="1"> Bsica</label></a></li></ul></div>
+                            </div>
+                        </div>
+                                                                        <div class="form-group" style="display: none;">
+                            <div class="col-sm-3">
+                                <label for="email1" class="control-label">Listas de precios servicios</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <select name="listaPreciosServicios[]" id="listaPreciosServicios" multiple="multiple" style="display: none;">
+                                    <option value="1">Bsica</option>                                </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Seleccionar">Seleccionar <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="1"> Bsica</label></a></li></ul></div>
+                            </div>
+                        </div>
+                                            </div>
+                    <div class="form-group" style="display: none">
+                        <div class="col-sm-3">
+                            <label class="control-label">Forma de pago</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <select class="multiselect" name="formaPago" style="display: none;">
+                                <option value="0">Sin forma por defecto</option>
+                                <option value="1">0 días</option><option value="2">30 días</option><option value="3">60 días</option><option value="4">90 días</option>                            </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Sin forma por defecto">Sin forma por defecto <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li class="active"><a href="javascript:void(0);"><label class="radio"><input type="radio" value="0"> Sin forma por defecto</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="1"> 0 días</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="2"> 30 días</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="3"> 60 días</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="4"> 90 días</label></a></li></ul></div>
+                        </div>
+                    </div>
+                    <div class="camposAdicionales">
+                                                <input type="hidden" name="camposAdicionales" class="camposAdicionalesInput" autocomplete="off">
+                    </div>
+                </div>
+                <input name="agregar" hidden="" autocomplete="off">
+                <div id="msg"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cancelar" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" name="agregarbtn" onclick="cargarCamposExtra(this)">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+	
+    <div class="col-md-12">
+    <div class="card card-underline">
+        <div class="card-head">
+            <header><i class="md md-group" style="margin: 10px 15px 0 0;"></i>Proveedores <small><a href="https://sistema.fixed.uy/index.php?option=entidades&amp;tipo=proveedores&amp;activos=todos">Click aqui para ver inactivos también</a> - <a target="_blank" href="index.php?option=entidades&amp;ajaxenable=true&amp;action=exportar&amp;tipo=proveedores">Exportar Excel</a></small>
+                <div id="filtrar_listado"><label><i class="fa fa-search"></i><input type="input" placeholder="Buscar..." autocomplete="off"></label></div>
+        </header></div>
+    <div class="card-body" style="padding: 0">
+                    <div class="dataTables_wrapper no-footer">
+                <table id="listado_elementos" class="table">
+                    <thead>
+                        <tr>
+                        <th>Nombre</th>
+                        <th>Documento</th>
+                        <th>Domicilio</th>
+                                                                        <th class="no-ordenar"></th>                    </tr>
+                    </thead>
+                    <tbody>    <tr class="par" data-entidad="19">
+        <td>Alejandro Rojas (NTT DATA)</td>
+        <td>72721080</td>
+        <td><small>Pasaje Fortunato Herrera 499<br>Trujillo, La Libertad</small></td>
+                        <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 19)" onmouseover="cargarMenuOpcionesRow(this, 19)"><i class="md md-control-point"></i></button></td>
+    </tr>
+        <tr data-entidad="80">
+        <td>Alejandro Rojas (NTT DATA)</td>
+        <td>72721080</td>
+        <td><small>Pasaje Fortunato Herrera 499<br>Trujillo, La Libertad</small></td>
+                        <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 80)" onmouseover="cargarMenuOpcionesRow(this, 80)"><i class="md md-control-point"></i></button></td>
+    </tr>
+        <tr class="par" data-entidad="82">
+        <td>Alejandro Rojas (NTT DATA)</td>
+        <td>72721080</td>
+        <td><small>Pasaje Fortunato Herrera 499<br>Trujillo, La Libertad</small></td>
+                        <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 82)" onmouseover="cargarMenuOpcionesRow(this, 82)"><i class="md md-control-point"></i></button></td>
+    </tr>
+        <tr data-entidad="85">
+        <td>Alejandro Rojas (NTT DATA)</td>
+        <td>72721080</td>
+        <td><small>Pasaje Fortunato Herrera 499<br>Trujillo, La Libertad</small></td>
+                        <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 85)" onmouseover="cargarMenuOpcionesRow(this, 85)"><i class="md md-control-point"></i></button></td>
+    </tr>
+        <tr class="par" data-entidad="163">
+        <td>Alejandro Rojas (NTT DATA)</td>
+        <td>72721080</td>
+        <td><small>Pasaje Fortunato Herrera 499<br>Trujillo, La Libertad</small></td>
+                        <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 163)" onmouseover="cargarMenuOpcionesRow(this, 163)"><i class="md md-control-point"></i></button></td>
+    </tr>
+        <tr data-entidad="190">
+        <td>Alejandro Rojas (NTT DATA)</td>
+        <td>72721080</td>
+        <td><small>Pasaje Fortunato Herrera 499<br>Trujillo, La Libertad</small></td>
+                        <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 190)" onmouseover="cargarMenuOpcionesRow(this, 190)"><i class="md md-control-point"></i></button></td>
+    </tr>
+    </tbody>
+                </table>
+            </div>
+                </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var cantidadEntidades = 51;
+    var tipoEntidades = "proveedores";
+</script>
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"></div>
+
+<style type="text/css">
+    .mail:hover{ cursor: pointer; }
+</style></div>
+<script src="modules/entidades/scripts.js?v=2.5.5"></script>
+	
+					</div>
+				</section>
+			</div>
+						<div id="menubar" class="menubar-inverse  animate">
+				<div class="menubar-fixed-panel">
+					<div>
+						<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);" onclick="actualizarMenuFijo()">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+					<div class="expanded">
+						<span class="text-lg text-bold text-primary ">Fixed</span>
+					</div>
+				</div>
+				<div class="nano has-scrollbar" style="height: 847.312px;"><div class="nano-content" tabindex="0" style="right: -17px;"><div class="menubar-scroll-panel" style="padding-bottom: 1px;">
+					<ul id="main-menu" class="gui-controls"><li id="menuBtnInicio"><a href="?option=inicio"><div class="gui-icon"><i class="md md-home"></i></div><span class="title">Inicio</span></a></li><li id="menuBtnVentas"><a href="?option=facturacion"><div class="gui-icon"><i class="md md-add-shopping-cart"></i></div><span class="title">Ventas</span></a></li><li id="menuBtnCompras"><a href="?option=compras"><div class="gui-icon"><i class="md md-shopping-basket"></i></div><span class="title">Compras</span></a></li><li id="menuBtnClientes" class="gui-folder"><div class="gui-icon"><i class="md md-group"></i></div><a href="javascript:void(0);"><span class="title">Clientes</span></a><ul><li id="menuBtnClientes"><a href="?option=entidades&amp;tipo=clientes"><span class="title">Ver mis clientes</span></a></li><li id="menuBtnClientes"><a href="?option=entidades-cuentas&amp;tipo=clientes"><span class="title">Cuentas clientes</span></a></li><li id="menuBtnClientes"><a href="?option=entidades-recibos-cobro"><span class="title">Recibos clientes</span></a></li></ul></li><li id="menuBtnProveedores" class="gui-folder active expanded"><div class="gui-icon"><i class="md md-group"></i></div><a href="javascript:void(0);"><span class="title">Proveedores</span></a><ul><li id="menuBtnProveedores" class="active expanded"><a href="?option=entidades&amp;tipo=proveedores" class="active"><span class="title">Ver mis proveedores</span></a></li><li id="menuBtnProveedores"><a href="?option=entidades-cuentas&amp;tipo=proveedores"><span class="title">Cuentas proveedores</span></a></li><li id="menuBtnProveedores"><a href="?option=entidades-recibos-pago"><span class="title">Recibos proveedores</span></a></li></ul></li><li id="menuBtnCentro-de-costos"><a href="?option=centro-costos"><div class="gui-icon"><i class="glyphicon glyphicon-list"></i></div><span class="title">Centro de costos</span></a></li><li id="menuBtnEstadsticas-centro-costos"><a href="?option=estadisticas-centro-costos"><div class="gui-icon"><i class="fa fa-area-chart"></i></div><span class="title">Estadsticas centro costos</span></a></li><li id="menuBtnEstadisticas" class="gui-folder"><div class="gui-icon"><i class="fa fa-line-chart"></i></div><a href="javascript:void(0);"><span class="title">Estadísticas</span></a><ul><li id="menuBtnEstadisticas"><a href="?option=estadisticas"><span class="title">Venta</span></a></li><li id="menuBtnEstadisticas"><a href="?option=estadisticas-gastos"><span class="title">Compra</span></a></li></ul></li><li id="menuBtnFactura-electronica" class="gui-folder"><div class="gui-icon"><i class="md md-backup"></i></div><a href="javascript:void(0);"><span class="title">Factura electrónica</span></a><ul><li id="menuBtnFactura-electronica"><a href="?option=opciones-cfe-cae"><span class="title">CAE</span></a></li><li id="menuBtnFactura-electronica"><a href="?option=opciones-cfe-certificados"><span class="title">Firma electrónica</span></a></li><li id="menuBtnFactura-electronica"><a href="?option=cfe-recibidos"><span class="title">CFE recibidos</span></a></li></ul></li><li id="menuBtnOpciones" class="gui-folder"><div class="gui-icon"><i class="fa fa-cogs"></i></div><a href="javascript:void(0);"><span class="title">Opciones</span></a><ul><li id="menuBtnOpciones"><a href="?option=usuarios"><span class="title">Usuarios</span></a></li><li id="menuBtnOpciones"><a href="?option=opciones"><span class="title">Generales</span></a></li><li id="menuBtnOpciones"><a href="?option=opciones-venta"><span class="title">Venta</span></a></li><li id="menuBtnOpciones"><a href="?option=opciones-compras"><span class="title">Compra</span></a></li><li class="gui-folder"><a href="javascript:void(0);"><span class="title">Varias</span></a><ul><li id="menuBtnOpciones"><a href="?option=opciones-medios-pago"><span class="title">Medios de pago</span></a></li><li id="menuBtnOpciones"><a href="?option=usuarios-roles"><span class="title">Roles de usuario</span></a></li></ul></li></ul></li></ul>				</div></div><div class="nano-pane" style="display: none;"><div class="nano-slider" style="height: 830px; transform: translate(0px, 0px);"></div></div></div>
+			</div>
+		</div>
+		<input type="hidden" id="version" value="2.5.5" autocomplete="off">
+		<input type="hidden" id="urlPublica" value="https://sistema.fixed.uy/" autocomplete="off">
+		<iframe id="iFrameDescarga" name="iFrameDescarga" style="display: none;"></iframe>
+        
+
+	    	<span style="position: absolute; left: 50%; width: 600px; text-align: center; margin-left: -300px;"><a href="legal/" target="_blank">Legal | Términos y condiciones | Política de privacidad | Tratamiento de datos personales</a></span>
+	
+        <div id="MenuOpcionesRow" style="position: absolute; z-index: 9999; padding: 10px; top: 248.156px; left: 1658px;" class="open"><ul class="dropdown-menu" role="menu"><li><span onclick="modalVer(19);">Ver detalle</span></li><li><span onclick="modaledit(19);">Editar</span></li></ul></div>
+        			
+	<script type="text/javascript">
+	$(function(){
+		$('#preLoader').hide();
+	});
+    $(document).on("submit", "form", function(event){
+        $(window).off('beforeunload');
+        if($(this).prop('target') != '_blank'){
+			$('#preLoader').show();
+    	}
+    });
+	$(window).on('beforeunload', function(){
+		if($("div.modal.fade.in form" ).length && $('#preLoader').is(":hidden")){
+			return 'Tienes una ventana abierta, seguro que quieres salir?';
+		};
+		$('#preLoader').show();	
+	});
+
+	var tasasIva = [];
+	tasasIva[1] = new Object(); tasasIva[1].id = 1; tasasIva[1].valor = 0; tasasIva[1].nombre = "Tasa exportacion"; tasasIva[1].sigla = "Expor"; tasasIva[1].activo_productos = 1; tasasIva[1].activo_servicios = 1;tasasIva[2] = new Object(); tasasIva[2].id = 2; tasasIva[2].valor = 0; tasasIva[2].nombre = "Tasa exenta"; tasasIva[2].sigla = "Exent"; tasasIva[2].activo_productos = 1; tasasIva[2].activo_servicios = 1;tasasIva[3] = new Object(); tasasIva[3].id = 3; tasasIva[3].valor = 10; tasasIva[3].nombre = "Tasa Minima"; tasasIva[3].sigla = "Mínim"; tasasIva[3].activo_productos = 1; tasasIva[3].activo_servicios = 1;tasasIva[4] = new Object(); tasasIva[4].id = 4; tasasIva[4].valor = 22; tasasIva[4].nombre = "Tasa basica"; tasasIva[4].sigla = "Básic"; tasasIva[4].activo_productos = 1; tasasIva[4].activo_servicios = 1;tasasIva[5] = new Object(); tasasIva[5].id = 5; tasasIva[5].valor = 0; tasasIva[5].nombre = "No facturable"; tasasIva[5].sigla = "NoFac"; tasasIva[5].activo_productos = 0; tasasIva[5].activo_servicios = 0;
+	var tiposDocumentos = [];
+	tiposDocumentos[1] = new Object();
+			tiposDocumentos[1].id = 1;
+			tiposDocumentos[1].nombre = "Venta";
+			tiposDocumentos[1].prefijo = "V";tiposDocumentos[1].campos = [];tiposDocumentos[2] = new Object();
+			tiposDocumentos[2].id = 2;
+			tiposDocumentos[2].nombre = "Compra";
+			tiposDocumentos[2].prefijo = "C";tiposDocumentos[2].campos = [];tiposDocumentos[3] = new Object();
+			tiposDocumentos[3].id = 3;
+			tiposDocumentos[3].nombre = "Recibo cliente";
+			tiposDocumentos[3].prefijo = "REC";tiposDocumentos[3].campos = [];tiposDocumentos[4] = new Object();
+			tiposDocumentos[4].id = 4;
+			tiposDocumentos[4].nombre = "Recibo compra";
+			tiposDocumentos[4].prefijo = "RCO";tiposDocumentos[4].campos = [];tiposDocumentos[5] = new Object();
+			tiposDocumentos[5].id = 5;
+			tiposDocumentos[5].nombre = "Remito Ingreso";
+			tiposDocumentos[5].prefijo = "RemIng";tiposDocumentos[5].campos = [];tiposDocumentos[6] = new Object();
+			tiposDocumentos[6].id = 6;
+			tiposDocumentos[6].nombre = "Remito Transferencia";
+			tiposDocumentos[6].prefijo = "RemTra";tiposDocumentos[6].campos = [];tiposDocumentos[7] = new Object();
+			tiposDocumentos[7].id = 7;
+			tiposDocumentos[7].nombre = "Remito Salida";
+			tiposDocumentos[7].prefijo = "RemSal";tiposDocumentos[7].campos = [];tiposDocumentos[8] = new Object();
+			tiposDocumentos[8].id = 8;
+			tiposDocumentos[8].nombre = "Presupuesto";
+			tiposDocumentos[8].prefijo = "P";tiposDocumentos[8].campos = [];tiposDocumentos[9] = new Object();
+			tiposDocumentos[9].id = 9;
+			tiposDocumentos[9].nombre = "Devolucin";
+			tiposDocumentos[9].prefijo = "DEV";tiposDocumentos[9].campos = [];tiposDocumentos[10] = new Object();
+			tiposDocumentos[10].id = 10;
+			tiposDocumentos[10].nombre = "Ajuste";
+			tiposDocumentos[10].prefijo = "AJ";tiposDocumentos[10].campos = JSON.parse("[]");tiposDocumentos[11] = new Object();
+			tiposDocumentos[11].id = 11;
+			tiposDocumentos[11].nombre = "Resguardo";
+			tiposDocumentos[11].prefijo = "RES";tiposDocumentos[11].campos = [];tiposDocumentos[12] = new Object();
+			tiposDocumentos[12].id = 12;
+			tiposDocumentos[12].nombre = "Resguardo recibido";
+			tiposDocumentos[12].prefijo = "RES RECIBIDO";tiposDocumentos[12].campos = [];
+	var cotizacionesUI = [];
+	cotizacionesUI[2017] = 3.507;
+	cotizacionesUI[2018] = 3.727;
+	cotizacionesUI[2019] = 3.727;
+	cotizacionesUI[2020] = 4.3659;
+	cotizacionesUI[2021] = 4.7846;
+	cotizacionesUI[2022] = 5.1608; //Cierre del 2021
+	cotizacionesUI[2023] = 5.6023;
+
+	var paises = [];
+
+	</script>
+
+			<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147312117-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-147312117-1');
+		</script>
+	
+			<script>
+			$( document ).ready(function() {
+				function initFreshChat() {
+											var restoreId = null;
+										window.fcWidget.init({
+						token: "1abc2be5-256f-415f-8182-bc53fee258e3",
+						host: "https://wchat.freshchat.com",
+				    	externalId: '85.1',
+				    	restoreId: restoreId ? restoreId : null
+					});
+					window.fcWidget.user.setFirstName("Admin");
+					window.fcWidget.user.setLastName("Fixed");
+					window.fcWidget.user.setEmail("info@fixed.uy");
+					window.fcWidget.user.setProperties({
+						id_empresa: "85",
+						nombre_empresa: "Demo - De la libreta a la computadora",
+						razon_social: "Demo - De la libreta a la computadora",
+						RUT: ""
+					});
+									}
+
+				(function(d, id) {
+				    var fcJS;
+				    if (d.getElementById(id)) {
+				        initFreshChat();
+				        return;
+				    }
+				    fcJS = d.createElement('script');
+				    fcJS.id = id;
+				    fcJS.async = true;
+				    fcJS.src = 'https://wchat.freshchat.com/js/widget.js';
+				    fcJS.onload = initFreshChat;
+				    d.head.appendChild(fcJS);
+				}(document, 'freshchat-js-sdk'));
+		    });
+
+		</script>
+		
+
+<div id="device-breakpoints"><div class="device-xs visible-xs" data-breakpoint="xs"></div><div class="device-sm visible-sm" data-breakpoint="sm"></div><div class="device-md visible-md" data-breakpoint="md"></div><div class="device-lg visible-lg" data-breakpoint="lg"></div></div><div id="fc_frame" class="fc-widget-normal" style="bottom: 15px; right: 15px;"><iframe id="fc_widget" name="fc_widget" title="Chat" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div><div id="fc_push_frame"><iframe id="fc_push" src="https://fixed.webpush.freshchat.com/index.html?ref=aHR0cHM6Ly9zaXN0ZW1hLmZpeGVkLnV5" title="Chat" frameborder="0"></iframe></div></body></html>

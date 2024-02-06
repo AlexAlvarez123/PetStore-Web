@@ -1,0 +1,252 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 21,
+        "name": "Añadir un cliente en el sistema Fixed Parametrizado",
+        "description": "",
+        "id": "prueba-de-compra;añadir-un-cliente-en-el-sistema-fixed-parametrizado;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4076398900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "abro la pagina de saucedemo con el navegador edge",
+            "match": {
+              "location": "SaucedemoStepDefinition.abro_la_pagina_de_saucedemo_con_el_navegador_edge()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 367680500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "ingreso \"standard_user\" en el campo Username del login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 9
+                }
+              ],
+              "location": "SaucedemoStepDefinition.ingreso_en_el_campo_username_del_login(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151344600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "ingreso \"secret_sauce\" en el campo Password del login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 9
+                }
+              ],
+              "location": "SaucedemoStepDefinition.ingreso_en_el_campo_password_del_login(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 420487700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "obtengo un login exitoso",
+            "match": {
+              "location": "SaucedemoStepDefinition.obtengo_un_login_exitoso()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 521932200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Agrego el primer producto al carrito \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sauce Labs Backpack",
+                  "offset": 38
+                }
+              ],
+              "location": "SaucedemoStepDefinition.agregoElPrimerProductoAlCarrito(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 289199300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Agrego el segundo producto al carrito \"Sauce Labs Bolt T-Shirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sauce Labs Bolt T-Shirt",
+                  "offset": 39
+                }
+              ],
+              "location": "SaucedemoStepDefinition.agregoElSegundoProductoAlCarrito(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69301400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Visualizo que se agregaron correctamente",
+            "match": {
+              "location": "SaucedemoStepDefinition.Visualizo_que_se_agregaron_correctamente()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120078200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Hago click en el botton checkout",
+            "match": {
+              "location": "SaucedemoStepDefinition.Hago_click_en_el_botton_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102309400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "ingreso mi \"alex\" en el campo de nombre",
+            "match": {
+              "arguments": [
+                {
+                  "val": "alex",
+                  "offset": 12
+                }
+              ],
+              "location": "SaucedemoStepDefinition.ingreso_mi_en_el_campo_de_nombre(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106100300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "ingreso mi \"alvarez\" en el campo de apellido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "alvarez",
+                  "offset": 12
+                }
+              ],
+              "location": "SaucedemoStepDefinition.ingreso_mi_en_el_campo_de_apellido(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83459400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "ingreso mi \"04004\" en el campo de codigo postal",
+            "match": {
+              "arguments": [
+                {
+                  "val": "04004",
+                  "offset": 12
+                }
+              ],
+              "location": "SaucedemoStepDefinition.ingreso_mi_en_el_campo_de_codigo_postal(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 154412200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "hago click en el boton finalizar",
+            "match": {
+              "location": "SaucedemoStepDefinition.hago_click_en_el_boton_finalizar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46283300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "valido la confirmación de la compra con el mensaje \"Thank you for your order!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thank you for your order!",
+                  "offset": 52
+                }
+              ],
+              "location": "SaucedemoStepDefinition.valido_la_confirmación_de_la_compra_con_el_mensaje(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Saucedemo"
+          },
+          {
+            "name": "@FlujoDeCompra"
+          }
+        ]
+      }
+    ],
+    "name": "Prueba de compra",
+    "description": "",
+    "id": "prueba-de-compra",
+    "keyword": "Feature",
+    "uri": "src/test/resources/web/Saucedemo.feature",
+    "tags": [
+      {
+        "name": "@Saucedemo",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@FlujoDeCompra",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+* Conclusiones *
+1. El uso del patrón de diseño POM hace que el proyecto sea mas estructurado e entendible
+2. Tener una buena redacción Gherkin hace que sea mas entendible el caso de prueba

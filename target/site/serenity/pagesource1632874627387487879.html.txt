@@ -1,0 +1,866 @@
+<html lang="en"><head>
+		<title>Clientes | Fixed | Demo - De la libreta a la computadora</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="../images/favicon.png">
+        <link rel="apple-touch-icon" href="images/logos_login/1_logo.png">
+        <link rel="apple-touch-icon-precomposed" href="images/logos_login/1_logo.png">
+		<meta name="msapplication-TileImage" content="images/logos_login/1_logo.png">
+
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/bootstrap.css?2.3">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/materialadmin.css?v=2.5.5">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/font-awesome.min.css?1422529194">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/material-design-iconic-font.min.css?1421434286">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/rickshaw/rickshaw.css?1422792967">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/morris/morris.core.css?1420463396">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/DataTables/jquery.dataTables.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/DataTables/TableTools.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/wizard/wizard.css?1425466601">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/bootstrap-datepicker/datepicker3.css?1424887858">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/toastr/toastr.css?1425466569">
+		<link type="text/css" rel="stylesheet" href="assets/css/html5imageupload.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/theme-default/libs/summernote/summernote.css?1425218701">
+		<link type="text/css" rel="stylesheet" href="assets/js/libs/summernote/summernote.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-tour.min.css">
+
+		<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-RWVFXV65DE&amp;l=dataLayer&amp;cx=c"></script><script src="assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
+ 		<script src="assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+ 		<script src="assets/js/libs/bootstrap/bootstrap.min.js"></script>
+ 		<script src="assets/js/libs/bootstrap-multiselect/bootstrap-multiselect.js?v=1.3"></script>
+ 		<script src="assets/js/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+ 		<script src="assets/js/libs/spin.js/spin.min.js"></script><style type="text/css"></style>
+ 		<script src="assets/js/libs/autosize/jquery.autosize.min.js"></script>
+ 		<script src="assets/js/libs/moment/moment.min.js"></script>
+ 		<script src="assets/js/libs/flot/jquery.flot.min.js"></script>
+ 		<script src="assets/js/libs/flot/jquery.flot.time.min.js"></script>
+ 		<script src="assets/js/libs/flot/jquery.flot.resize.min.js"></script>
+ 		<script src="assets/js/libs/flot/jquery.flot.orderBars.js"></script>
+ 		<script src="assets/js/libs/flot/jquery.flot.pie.js"></script>
+ 		<script src="assets/js/libs/flot/curvedLines.js"></script>
+ 		<script src="assets/js/libs/jquery-knob/jquery.knob.min.js"></script>
+ 		<script src="assets/js/libs/sparkline/jquery.sparkline.min.js"></script>
+ 		<script src="assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+ 		<script src="assets/js/libs/d3/d3.min.js"></script>
+ 		<script src="assets/js/libs/d3/d3.v3.js"></script>
+ 		<script src="assets/js/libs/jquery.maskMoney.js?v=1.2"></script>
+ 		<script src="assets/js/libs/jquery.number.min.js"></script>
+ 		<script src="assets/js/libs/inputmask/jquery.inputmask.bundle.min.js"></script>
+ 		<script src="assets/js/libs/DataTables/jquery.dataTables.min.js"></script>
+ 		<script src="assets/js/libs/wizard/jquery.bootstrap.wizard.min.js"></script>
+ 		<script src="assets/js/libs/jquery-ui-sortable/jquery-ui.min.js"></script>
+ 		<script src="assets/js/libs/summernote/summernote.min.js"></script>
+ 		<script src="assets/js/libs/toastr/toastr.js"></script>
+ 		<script src="assets/js/libs/nestable/jquery.nestable.js"></script>
+		<script src="assets/js/libs/rickshaw/rickshaw.min.js"></script>
+		<script src="assets/js/core/source/App.js"></script>
+		<script src="assets/js/core/source/AppNavigation.js"></script>
+		<script src="assets/js/core/source/AppOffcanvas.js"></script>
+		<script src="assets/js/core/source/AppCard.js"></script>
+		<script src="assets/js/core/source/AppForm.js"></script>
+		<script src="assets/js/core/source/AppNavSearch.js"></script>
+		<script src="assets/js/core/source/AppVendor.js"></script>
+		<script src="assets/js/libs/html5imageupload/html5imageupload.js"></script>
+		<script src="assets/js/libs/bootstrap-tour.min.js"></script>
+
+ 		<script src="assets/js/javascript.js?v=2.5.5"></script>
+
+		<script type="text/javascript">
+		var pais = 1;
+		</script>
+
+		<script type="text/javascript" src="assets/js/scriptsNotification.js?v=2.5.5"></script>
+	<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><script id="freshchat-js-sdk" async="" src="https://wchat.freshchat.com/js/widget.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><link href="https://wchat.freshchat.com/widget/css/widget.css?t=1698339498643" rel="stylesheet"></head>
+
+	<body class="menubar-hoverable header-fixed menubar-first option-entidades menubar-pin modal-open" style="padding-right: 17px;">
+		<div id="preLoader" style="position: fixed; background: rgb(255, 255, 255); width: 100%; height: 100%; z-index: 9999; opacity: 0.9; padding-top: 200px; display: none;">
+			<span id="txtPreLoader">Cargando...</span>
+            <img src="/images/logos_login/1_logo.png" alt="Logo">
+		</div>
+		<header id="header">
+			<div class="headerbar">
+				<div style="position: absolute; height: 60px;">
+											<span class="text-lg text-bold text-primary"><a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);"><i class="fa fa-bars"></i></a>Demo - De la libreta a la computadora | Sin factura electrónica</span>
+					
+					<div id="containerAyudas" class="card transparente" style="float:right;margin-left:25px;margin-top:10px;display:none">
+						<ul class="list-unstyled">
+							<li class="dropdown">
+								<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown" aria-expanded="false">
+									<span class="btn btn-info" id="btnAyuda"><i class="md md-help"></i>Ayudas</span>
+								</a>
+								<ul class="dropdown-menu animation-dock" id="menuAyudas">
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="headerbar-right">
+										<ul class="header-nav header-nav-options">
+												<li class="dropdown hidden-xs">
+							<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown" aria-expanded="false">
+								<i class="md md-done-all"></i>							</a>
+							<ul class="dropdown-menu animation-expand"></ul>
+						</li>
+						<li class="dropdown hidden-xs">
+							<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-bell"></i>							</a>
+							<ul class="dropdown-menu animation-expand"></ul>
+						</li>
+						<li class="dropdown hidden-xs">
+							<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-warning"></i>							</a>
+							<ul class="dropdown-menu animation-expand"></ul>
+						</li>
+					</ul>
+					<ul class="header-nav header-nav-profile">
+						<li class="dropdown">
+							<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
+								<span class="profile-info">
+									Admin Fixed									<small>Administrador</small>
+									<small style="color: red; opacity: 1;">Salir - Cerrar sesión</small>								</span>
+							</a>
+							<ul class="dropdown-menu animation-dock">
+								<li class="dropdown-header">Opciones</li>
+								<li><a href="index.php?option=perfil">Mis datos</a></li>
+								<li><a href="index.php?option=mi-cuenta">MI cuenta</a></li>								<li class="divider"></li>
+								<li><a href="logout.php"><i class="fa fa-fw fa-power-off text-danger"></i> Cerrar sesión</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="base">
+			<div id="content">
+				<section>
+					<div class="section-body">
+						<div id="avisoNavegador"></div>
+						
+<div class="row">
+	<div class="col-md-12">
+    </div>
+	<div class="col-md-12">
+    <div class="card transparente">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#Agregar">Agregar Cliente</button>
+    </div>
+</div>
+
+<div class="modal fade in" id="Agregar" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="false" style="padding-right: 17px; display: block;"><div class="modal-backdrop fade in" style="height: 919px;"></div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="formModalLabel">Agregar Cliente</h4>
+            </div>
+            <form id="formAgregarCliente" class="form-horizontal" role="form" method="post" action="index.php?option=entidades&amp;tipo=clientes">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label for="Razón-Social" class="control-label">Tipo de documento</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <select class="multiselect" name="tipo_documento" onchange="checkDocumento('formAgregarCliente')" style="display: none;">
+                                <option value="2" selected="">RUT (Uruguay)
+                                </option><option value="3">Cédula de Identidad (Uruguay)</option>
+                                <option value="4">Otros</option>
+                                <option value="5">Pasaporte</option>
+                                <option value="6">DNI (Argentina, Brasil, Chile o Paraguay)</option>
+                                <option value="7">NIFE - Número de identificación fiscal extranjero</option>
+                            </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Otros" aria-expanded="false">Otros <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li class=""><a href="javascript:void(0);"><label class="radio"><input type="radio" value="2"> RUT (Uruguay)
+                                </label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="3"> Cédula de Identidad (Uruguay)</label></a></li><li class="active"><a href="javascript:void(0);"><label class="radio"><input type="radio" value="4"> Otros</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="5"> Pasaporte</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="6"> DNI (Argentina, Brasil, Chile o Paraguay)</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="7"> NIFE - Número de identificación fiscal extranjero</label></a></li></ul></div>
+                        </div>
+                    </div>
+                    <div id="camposDocumentos">
+                        <div id="documento_2" style="display: none;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="RUT" class="control-label">RUT</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="RUT" id="RUT" class="form-control " value="" placeholder="RUT" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div><div id="validadorRUT"></div></div>
+                        <div id="documento_3" style="display: none;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Número-de-cédula" class="control-label">Número de cédula</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Número-de-cédula" id="Número-de-cédula" class="form-control " value="" placeholder="Número de cédula" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div><div id="validadorCedula"></div></div>
+                        <div id="documento_4" style="display: block;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Número-de-documento" class="control-label">Número de documento</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Número-de-documento" id="Número-de-documento" class="form-control " value="" placeholder="Número de documento" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div></div>
+                        <div id="documento_5" style="display: none;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Número-de-pasaporte" class="control-label">Número de pasaporte</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Número-de-pasaporte" id="Número-de-pasaporte" class="form-control " value="" placeholder="Número de pasaporte" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div></div>
+                        <div id="documento_6" style="display: none;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Número-DNI" class="control-label">Número DNI</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Número-DNI" id="Número-DNI" class="form-control " value="" placeholder="Número DNI" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div></div>
+                        <div id="documento_7" style="display: none;"><div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Número-NIFE" class="control-label">Número NIFE</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Número-NIFE" id="Número-NIFE" class="form-control " value="" placeholder="Número NIFE" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div></div>
+                    </div>
+                    <div class="form-group" id="paisDesplegable" style="display: none;">
+                        <div class="col-sm-3">
+                            <label class="control-label">País</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <select class="multiselect" name="paisDesplegable" style="display: none;">
+                                <option value="AR">Argentina</option>
+                                <option value="BR">Brasil</option>
+                                <option value="CL">Chile</option>
+                                <option value="PY">Paraguay</option>
+                            </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Argentina">Argentina <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li class="active"><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AR"> Argentina</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BR"> Brasil</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CL"> Chile</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PY"> Paraguay</label></a></li></ul></div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="paisesISO" style="display: block;">
+                        <div class="col-sm-3">
+                            <label for="País" class="control-label">País</label>
+                        </div>
+                        <div class="col-sm-7" id="paisContenedor"><select name="pais" id="paisISO" style="display: none;"><option value="AF">Afganistán</option><option value="AX">Åland</option><option value="AL">Albania</option><option value="DE">Alemania</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguila</option><option value="AQ">Antártida</option><option value="AG">Antigua y Barbuda</option><option value="SA">Arabia Saudita</option><option value="DZ">Argelia</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaiyán</option><option value="BS">Bahamas</option><option value="BD">Bangladés</option><option value="BB">Barbados</option><option value="BH">Baréin</option><option value="BE">Bélgica</option><option value="BZ">Belice</option><option value="BJ">Benín</option><option value="BM">Bermudas</option><option value="BY">Bielorrusia</option><option value="BO">Bolivia</option><option value="BQ">Bonaire, San Eustaquio y Saba</option><option value="BA">Bosnia y Herzegovina</option><option value="BW">Botsuana</option><option value="BR">Brasil</option><option value="BN">Brunéi</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="BT">Bután</option><option value="CV">Cabo Verde</option><option value="KH">Camboya</option><option value="CM">Camerún</option><option value="CA">Canadá</option><option value="QA">Catar</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CY">Chipre</option><option value="CO">Colombia</option><option value="KM">Comoras</option><option value="KP">Corea del Norte</option><option value="KR">Corea del Sur</option><option value="CI">Costa de Marfil</option><option value="CR">Costa Rica</option><option value="HR">Croacia</option><option value="CU">Cuba</option><option value="CW">Curazao</option><option value="DK">Dinamarca</option><option value="DM">Dominica</option><option value="EC">Ecuador</option><option value="EG">Egipto</option><option value="SV">El Salvador</option><option value="AE">Emiratos Árabes Unidos</option><option value="ER">Eritrea</option><option value="SK">Eslovaquia</option><option value="SI">Eslovenia</option><option value="ES">España</option><option value="US">Estados Unidos</option><option value="EE">Estonia</option><option value="ET">Etiopía</option><option value="PH">Filipinas</option><option value="FI">Finlandia</option><option value="FJ">Fiyi</option><option value="FR">Francia</option><option value="GA">Gabón</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GD">Granada</option><option value="GR">Grecia</option><option value="GL">Groenlandia</option><option value="GP">Guadalupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GF">Guayana Francesa</option><option value="GG">Bailía de Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bisáu</option><option value="GQ">Guinea Ecuatorial</option><option value="GY">Guyana</option><option value="HT">Haití</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungría</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IQ">Irak</option><option value="IR">Irán</option><option value="IE">Irlanda</option><option value="BV">Isla Bouvet</option><option value="IM">Isla de Man</option><option value="CX">Isla de Navidad</option><option value="IS">Islandia</option><option value="KY">Islas Caimán</option><option value="CC">Islas Cocos</option><option value="CK">Islas Cook</option><option value="FO">Islas Feroe</option><option value="GS">Islas Georgias del Sur y Sandwich del Sur</option><option value="HM">Islas Heard y McDonald</option><option value="FK">Islas Malvinas</option><option value="MP">Islas Marianas del Norte</option><option value="MH">Islas Marshall</option><option value="PN">Islas Pitcairn</option><option value="SB">Islas Salomón</option><option value="TC">Islas Turcas y Caicos</option><option value="UM">Islas ultramarinas de Estados Unidos</option><option value="VG">Islas Vírgenes Británicas</option><option value="VI">Islas Vírgenes de los Estados Unidos</option><option value="IL">Israel</option><option value="IT">Italia</option><option value="JM">Jamaica</option><option value="JP">Japón</option><option value="JE">Jersey</option><option value="JO">Jordania</option><option value="KZ">Kazajistán</option><option value="KE">Kenia</option><option value="KG">Kirguistán</option><option value="KI">Kiribati</option><option value="99">Kosovo</option><option value="KW">Kuwait</option><option value="LA">Laos</option><option value="LS">Lesoto</option><option value="LV">Letonia</option><option value="LB">Líbano</option><option value="LR">Liberia</option><option value="LY">Libia</option><option value="LI">Liechtenstein</option><option value="LT">Lituania</option><option value="LU">Luxemburgo</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MY">Malasia</option><option value="MW">Malaui</option><option value="MV">Maldivas</option><option value="ML">Malí</option><option value="MT">Malta</option><option value="MA">Marruecos</option><option value="MQ">Martinica</option><option value="MU">Mauricio</option><option value="MR">Mauritania</option><option value="YT">Mayotte</option><option value="MX">México</option><option value="FM">Micronesia</option><option value="MD">Moldavia</option><option value="MC">Mónaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NI">Nicaragua</option><option value="NE">Níger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk</option><option value="NO">Noruega</option><option value="NC">Nueva Caledonia</option><option value="NZ">Nueva Zelanda</option><option value="OM">Omán</option><option value="NL">Países Bajos</option><option value="PK">Pakistán</option><option value="PW">Palaos</option><option value="PS">Palestina</option><option value="PA">Panamá</option><option value="PG">Papúa Nueva Guinea</option><option value="PY">Paraguay</option><option value="PE">Perú</option><option value="PF">Polinesia Francesa</option><option value="PL">Polonia</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="GB">Reino Unido</option><option value="EH">República Árabe Saharaui Democrática</option><option value="CF">República Centroafricana</option><option value="CZ">República Checa</option><option value="CG">República del Congo</option><option value="CD">República Democrática del Congo</option><option value="DO">República Dominicana</option><option value="RE">Reunión</option><option value="RW">Ruanda</option><option value="RO">Rumania</option><option value="RU">Rusia</option><option value="WS">Samoa</option><option value="AS">Samoa Americana</option><option value="BL">San Bartolomé</option><option value="KN">San Cristóbal y Nieves</option><option value="SM">San Marino</option><option value="MF">San Martín</option><option value="PM">San Pedro y Miquelón</option><option value="VC">San Vicente y las Granadinas</option><option value="SH">Santa Elena, Ascensión y Tristán de Acuña</option><option value="LC">Santa Lucía</option><option value="ST">Santo Tomé y Príncipe</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leona</option><option value="SG">Singapur</option><option value="SX">Sint Maarten</option><option value="SY">Siria</option><option value="SO">Somalia</option><option value="LK">Sri Lanka</option><option value="SZ">Suazilandia</option><option value="ZA">Sudáfrica</option><option value="SD">Sudán</option><option value="SS">Sudán del Sur</option><option value="SE">Suecia</option><option value="CH">Suiza</option><option value="SR">Surinam</option><option value="SJ">Svalbard y Jan Mayen</option><option value="TH">Tailandia</option><option value="TW">Taiwán (República de China)</option><option value="TZ">Tanzania</option><option value="TJ">Tayikistán</option><option value="IO">Territorio Británico del Océano Índico</option><option value="TF">Tierras Australes y Antárticas Francesas</option><option value="TL">Timor Oriental</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad y Tobago</option><option value="TN">Túnez</option><option value="TM">Turkmenistán</option><option value="TR">Turquía</option><option value="TV">Tuvalu</option><option value="UA">Ucrania</option><option value="UG">Uganda</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistán</option><option value="VU">Vanuatu</option><option value="VA">Vaticano, Ciudad del</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="WF">Wallis y Futuna</option><option value="YE">Yemen</option><option value="DJ">Yibuti</option><option value="ZM">Zambia</option><option value="ZW">Zimbabue</option></select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Seleccionar">Seleccionar <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AF"> Afganistán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AX"> Åland</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AL"> Albania</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="DE"> Alemania</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AD"> Andorra</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AO"> Angola</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AI"> Anguila</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AQ"> Antártida</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AG"> Antigua y Barbuda</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SA"> Arabia Saudita</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="DZ"> Argelia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AR"> Argentina</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AM"> Armenia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AW"> Aruba</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AU"> Australia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AT"> Austria</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AZ"> Azerbaiyán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BS"> Bahamas</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BD"> Bangladés</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BB"> Barbados</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BH"> Baréin</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BE"> Bélgica</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BZ"> Belice</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BJ"> Benín</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BM"> Bermudas</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BY"> Bielorrusia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BO"> Bolivia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BQ"> Bonaire, San Eustaquio y Saba</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BA"> Bosnia y Herzegovina</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BW"> Botsuana</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BR"> Brasil</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BN"> Brunéi</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BG"> Bulgaria</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BF"> Burkina Faso</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BI"> Burundi</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BT"> Bután</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CV"> Cabo Verde</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KH"> Camboya</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CM"> Camerún</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CA"> Canadá</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="QA"> Catar</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TD"> Chad</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CL"> Chile</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CN"> China</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CY"> Chipre</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CO"> Colombia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KM"> Comoras</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KP"> Corea del Norte</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KR"> Corea del Sur</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CI"> Costa de Marfil</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CR"> Costa Rica</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="HR"> Croacia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CU"> Cuba</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CW"> Curazao</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="DK"> Dinamarca</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="DM"> Dominica</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="EC"> Ecuador</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="EG"> Egipto</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SV"> El Salvador</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AE"> Emiratos Árabes Unidos</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="ER"> Eritrea</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SK"> Eslovaquia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SI"> Eslovenia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="ES"> España</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="US"> Estados Unidos</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="EE"> Estonia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="ET"> Etiopía</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PH"> Filipinas</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="FI"> Finlandia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="FJ"> Fiyi</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="FR"> Francia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GA"> Gabón</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GM"> Gambia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GE"> Georgia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GH"> Ghana</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GI"> Gibraltar</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GD"> Granada</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GR"> Grecia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GL"> Groenlandia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GP"> Guadalupe</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GU"> Guam</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GT"> Guatemala</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GF"> Guayana Francesa</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GG"> Bailía de Guernsey</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GN"> Guinea</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GW"> Guinea-Bisáu</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GQ"> Guinea Ecuatorial</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GY"> Guyana</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="HT"> Haití</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="HN"> Honduras</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="HK"> Hong Kong</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="HU"> Hungría</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="IN"> India</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="ID"> Indonesia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="IQ"> Irak</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="IR"> Irán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="IE"> Irlanda</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BV"> Isla Bouvet</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="IM"> Isla de Man</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CX"> Isla de Navidad</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="IS"> Islandia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KY"> Islas Caimán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CC"> Islas Cocos</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CK"> Islas Cook</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="FO"> Islas Feroe</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GS"> Islas Georgias del Sur y Sandwich del Sur</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="HM"> Islas Heard y McDonald</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="FK"> Islas Malvinas</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MP"> Islas Marianas del Norte</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MH"> Islas Marshall</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PN"> Islas Pitcairn</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SB"> Islas Salomón</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TC"> Islas Turcas y Caicos</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="UM"> Islas ultramarinas de Estados Unidos</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="VG"> Islas Vírgenes Británicas</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="VI"> Islas Vírgenes de los Estados Unidos</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="IL"> Israel</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="IT"> Italia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="JM"> Jamaica</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="JP"> Japón</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="JE"> Jersey</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="JO"> Jordania</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KZ"> Kazajistán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KE"> Kenia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KG"> Kirguistán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KI"> Kiribati</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="99"> Kosovo</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KW"> Kuwait</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LA"> Laos</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LS"> Lesoto</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LV"> Letonia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LB"> Líbano</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LR"> Liberia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LY"> Libia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LI"> Liechtenstein</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LT"> Lituania</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LU"> Luxemburgo</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MO"> Macao</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MK"> Macedonia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MG"> Madagascar</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MY"> Malasia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MW"> Malaui</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MV"> Maldivas</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="ML"> Malí</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MT"> Malta</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MA"> Marruecos</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MQ"> Martinica</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MU"> Mauricio</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MR"> Mauritania</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="YT"> Mayotte</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MX"> México</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="FM"> Micronesia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MD"> Moldavia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MC"> Mónaco</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MN"> Mongolia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="ME"> Montenegro</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MS"> Montserrat</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MZ"> Mozambique</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MM"> Myanmar</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NA"> Namibia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NR"> Nauru</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NP"> Nepal</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NI"> Nicaragua</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NE"> Níger</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NG"> Nigeria</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NU"> Niue</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NF"> Norfolk</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NO"> Noruega</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NC"> Nueva Caledonia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NZ"> Nueva Zelanda</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="OM"> Omán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="NL"> Países Bajos</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PK"> Pakistán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PW"> Palaos</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PS"> Palestina</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PA"> Panamá</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PG"> Papúa Nueva Guinea</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PY"> Paraguay</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PE"> Perú</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PF"> Polinesia Francesa</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PL"> Polonia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PT"> Portugal</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PR"> Puerto Rico</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="GB"> Reino Unido</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="EH"> República Árabe Saharaui Democrática</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CF"> República Centroafricana</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CZ"> República Checa</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CG"> República del Congo</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CD"> República Democrática del Congo</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="DO"> República Dominicana</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="RE"> Reunión</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="RW"> Ruanda</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="RO"> Rumania</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="RU"> Rusia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="WS"> Samoa</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="AS"> Samoa Americana</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="BL"> San Bartolomé</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="KN"> San Cristóbal y Nieves</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SM"> San Marino</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="MF"> San Martín</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="PM"> San Pedro y Miquelón</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="VC"> San Vicente y las Granadinas</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SH"> Santa Elena, Ascensión y Tristán de Acuña</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LC"> Santa Lucía</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="ST"> Santo Tomé y Príncipe</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SN"> Senegal</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="RS"> Serbia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SC"> Seychelles</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SL"> Sierra Leona</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SG"> Singapur</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SX"> Sint Maarten</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SY"> Siria</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SO"> Somalia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="LK"> Sri Lanka</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SZ"> Suazilandia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="ZA"> Sudáfrica</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SD"> Sudán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SS"> Sudán del Sur</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SE"> Suecia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="CH"> Suiza</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SR"> Surinam</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="SJ"> Svalbard y Jan Mayen</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TH"> Tailandia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TW"> Taiwán (República de China)</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TZ"> Tanzania</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TJ"> Tayikistán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="IO"> Territorio Británico del Océano Índico</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TF"> Tierras Australes y Antárticas Francesas</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TL"> Timor Oriental</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TG"> Togo</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TK"> Tokelau</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TO"> Tonga</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TT"> Trinidad y Tobago</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TN"> Túnez</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TM"> Turkmenistán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TR"> Turquía</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="TV"> Tuvalu</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="UA"> Ucrania</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="UG"> Uganda</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="UY"> Uruguay</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="UZ"> Uzbekistán</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="VU"> Vanuatu</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="VA"> Vaticano, Ciudad del</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="VE"> Venezuela</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="VN"> Vietnam</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="WF"> Wallis y Futuna</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="YE"> Yemen</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="DJ"> Yibuti</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="ZM"> Zambia</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="ZW"> Zimbabue</label></a></li></ul></div></div>
+                    </div>
+                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Razón-Social" class="control-label">Razón Social</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Razón-Social" id="Razón-Social" class="form-control " value="" placeholder="Razón Social" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Nombre" class="control-label">Nombre</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Nombre" id="Nombre" class="form-control " value="" placeholder="Nombre" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Dirección" class="control-label">Dirección</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Dirección" id="Dirección" class="form-control " value="" placeholder="Dirección" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Localidad" class="control-label">Localidad</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Localidad" id="Localidad" class="form-control " value="Montevideo" placeholder="Localidad" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Departamento" class="control-label">Departamento</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Departamento" id="Departamento" class="form-control " value="Montevideo" placeholder="Departamento" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label for="Dirección" class="control-label">Domicilio entrega<br><small>(si es diferente a la de facturación)</small></label>
+                        </div>
+                        <div class="col-sm-7">
+                            <input type="text" name="Dirección-entrega" id="Dirección-entrega" class="form-control " value="" placeholder="Dirección entega (si es diferente a la de facturación)" autocomplete="off"><div class="form-control-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Descuento" class="control-label">Descuento</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Descuento" id="Descuento" class="form-control " value="" placeholder="Descuento" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                <div class="col-sm-3">
+                    <label for="Mail-envio-factura" class="control-label">Mail envio factura</label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" name="Mail-envio-factura" id="Mail-envio-factura" class="form-control " value="" placeholder="Mail envio factura" autocomplete="off"><div class="form-control-line"></div>
+                </div>
+            </div>                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label for="esproveedor" class="control-label">Es proveedor</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="checkbox checkbox-styled">
+                                <label>
+                                    <input type="checkbox" name="esproveedor" value="1" autocomplete="off"><span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label for="escliente" class="control-label">Es cliente</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="checkbox checkbox-styled">
+                                <label>
+                                    <input type="checkbox" name="escliente" value="1" onclick="$('#div-listas-cliente').slideToggle(200);" checked="checked" autocomplete="off"><span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="form-group" id="contenedorVendedorAdd" style="display: none;">
+                        <div class="col-sm-3">
+                            <label class="control-label">Vendedor por defecto</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <select class="multiselect" name="vendedor" style="display: none;">
+                                <option value="0">Sin asignar</option>
+                                <option value="2">ernesto - Ernesto  Andreoli</option>                            </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Sin asignar">Sin asignar <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li class="active"><a href="javascript:void(0);"><label class="radio"><input type="radio" value="0"> Sin asignar</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="2"> ernesto - Ernesto  Andreoli</label></a></li></ul></div>
+                        </div>
+                    </div>
+                    <div id="div-listas-cliente">
+                                                <div class="form-group" style="display: none;">
+                            <div class="col-sm-3">
+                                <label for="email1" class="control-label">Listas de precios productos</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <select name="listaPreciosProductos[]" id="listaPreciosProductos" multiple="multiple" style="display: none;">
+                                    <option value="1">Bsica</option>                                </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Seleccionar">Seleccionar <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="1"> Bsica</label></a></li></ul></div>
+                            </div>
+                        </div>
+                                                                        <div class="form-group" style="display: none;">
+                            <div class="col-sm-3">
+                                <label for="email1" class="control-label">Listas de precios servicios</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <select name="listaPreciosServicios[]" id="listaPreciosServicios" multiple="multiple" style="display: none;">
+                                    <option value="1">Bsica</option>                                </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Seleccionar">Seleccionar <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="1"> Bsica</label></a></li></ul></div>
+                            </div>
+                        </div>
+                                            </div>
+                    <div class="form-group" style="display: none">
+                        <div class="col-sm-3">
+                            <label class="control-label">Forma de pago</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <select class="multiselect" name="formaPago" style="display: none;">
+                                <option value="0">Sin forma por defecto</option>
+                                <option value="1">0 días</option><option value="2">30 días</option><option value="3">60 días</option><option value="4">90 días</option>                            </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Sin forma por defecto">Sin forma por defecto <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Buscar"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li class="active"><a href="javascript:void(0);"><label class="radio"><input type="radio" value="0"> Sin forma por defecto</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="1"> 0 días</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="2"> 30 días</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="3"> 60 días</label></a></li><li><a href="javascript:void(0);"><label class="radio"><input type="radio" value="4"> 90 días</label></a></li></ul></div>
+                        </div>
+                    </div>
+                    <div class="camposAdicionales">
+                                                <input type="hidden" name="camposAdicionales" class="camposAdicionalesInput" autocomplete="off">
+                    </div>
+                </div>
+                <input name="agregar" hidden="" autocomplete="off">
+                <div id="msg"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cancelar" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" name="agregarbtn" onclick="cargarCamposExtra(this)">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+	
+    <div class="col-md-12">
+    <div class="card card-underline">
+        <div class="card-head">
+            <header><i class="md md-group" style="margin: 10px 15px 0 0;"></i>Clientes <small><a href="https://sistema.fixed.uy/index.php?option=entidades&amp;tipo=clientes&amp;activos=todos">Click aqui para ver inactivos también</a> - <a target="_blank" href="index.php?option=entidades&amp;ajaxenable=true&amp;action=exportar&amp;tipo=clientes">Exportar Excel</a></small>
+                <div id="filtrar_listado"><label><i class="fa fa-search"></i><input type="input" placeholder="Buscar..." autocomplete="off"></label></div>
+        </header></div>
+    <div class="card-body" style="padding: 0">
+                    <div class="dataTables_wrapper no-footer">
+                <table id="listado_elementos" class="table">
+                    <thead>
+                        <tr>
+                        <th>Nombre</th>
+                        <th>Documento</th>
+                        <th>Domicilio</th>
+                                                <th>Mail envio factura en pdf</th>                        <th class="no-ordenar"></th>                    </tr>
+                    </thead>
+                    <tbody>
+                                                    <tr class="par" data-entidad="20">
+                                <td>55765 (55766)</td>
+                                <td>55766</td>
+                                <td><small>323rd floor, make believe island, 3M paradise, country, X3 4F<br>, </small></td>
+                                                                 <td><span class="mail"> - - - </span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 20)" onmouseover="cargarMenuOpcionesRow(this, 20)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="241">
+                                <td>7399</td>
+                                <td>7399</td>
+                                <td><small>323rd floor, make believe island, 3M paradise, country, X3 4F<br>, </small></td>
+                                                                 <td><span class="mail"> - - - </span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 241)" onmouseover="cargarMenuOpcionesRow(this, 241)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="242">
+                                <td>7529</td>
+                                <td>7529</td>
+                                <td><small>323rd floor, make believe island, 3M paradise, country, X3 4F<br>, </small></td>
+                                                                 <td><span class="mail"> - - - </span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 242)" onmouseover="cargarMenuOpcionesRow(this, 242)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="29">
+                                <td>7767</td>
+                                <td></td>
+                                <td><small>yyy<br>, Montevideo</small></td>
+                                                                 <td><span class="mail"> - - - </span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 29)" onmouseover="cargarMenuOpcionesRow(this, 29)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="243">
+                                <td>8604</td>
+                                <td>8604</td>
+                                <td><small>323rd floor, make believe island, 3M paradise, country, X3 4F<br>, </small></td>
+                                                                 <td><span class="mail"> - - - </span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 243)" onmouseover="cargarMenuOpcionesRow(this, 243)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="244">
+                                <td>8701</td>
+                                <td>8701</td>
+                                <td><small>323rd floor, make believe island, 3M paradise, country, X3 4F<br>, </small></td>
+                                                                 <td><span class="mail"> - - - </span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 244)" onmouseover="cargarMenuOpcionesRow(this, 244)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="92">
+                                <td><nombre></nombre></td>
+                                <td><numero de="" documento=""></numero></td>
+                                <td><small><dirección><br>Montevideo<localidad>, Montevideo<departamento></departamento></localidad></dirección></small></td>
+                                                                 <td><span class="mail"><mail envio="" factura=""></mail></span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 92)" onmouseover="cargarMenuOpcionesRow(this, 92)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="38">
+                                <td>aa (aaa)</td>
+                                <td>123123</td>
+                                <td><small>aaaa<br>aaaa, aaaa</small></td>
+                                                                 <td><span class="mail">123</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 38)" onmouseover="cargarMenuOpcionesRow(this, 38)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="98">
+                                <td>aaa (aaaaa)</td>
+                                <td>15151515</td>
+                                <td><small>aa<br>Montevideo, Montevideo</small></td>
+                                                                 <td><span class="mail">aa</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 98)" onmouseover="cargarMenuOpcionesRow(this, 98)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="181">
+                                <td>Alfonso (Razón Social)</td>
+                                <td>76650504</td>
+                                <td><small>Torres Paz<br>Chiclayo, Lambayeque</small></td>
+                                                                 <td><span class="mail">alfonsomejia99@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 181)" onmouseover="cargarMenuOpcionesRow(this, 181)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="182">
+                                <td>Alfonso (Razón Social)</td>
+                                <td>76650504</td>
+                                <td><small>Torres Paz<br>Chiclayo, Lambayeque</small></td>
+                                                                 <td><span class="mail">alfonsomejia99@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 182)" onmouseover="cargarMenuOpcionesRow(this, 182)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="184">
+                                <td>Alfonso (Razón Social)</td>
+                                <td>76650504</td>
+                                <td><small>Torres Paz<br>Chiclayo, Lambayeque</small></td>
+                                                                 <td><span class="mail">alfonsomejia99@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 184)" onmouseover="cargarMenuOpcionesRow(this, 184)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="185">
+                                <td>Alfonso (Razón Social)</td>
+                                <td>76650504</td>
+                                <td><small>Torres Paz<br>Chiclayo, Lambayeque</small></td>
+                                                                 <td><span class="mail">alfonsomejia99@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 185)" onmouseover="cargarMenuOpcionesRow(this, 185)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="191">
+                                <td>Alfonso (Razón Social)</td>
+                                <td>76650504</td>
+                                <td><small>Torres Paz<br>Chiclayo, Lambayeque</small></td>
+                                                                 <td><span class="mail">alfonsomejia99@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 191)" onmouseover="cargarMenuOpcionesRow(this, 191)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="224">
+                                <td>Alfonso (Razón Social)</td>
+                                <td>76650504</td>
+                                <td><small>Torres Paz<br>Chiclayo, Lambayeque</small></td>
+                                                                 <td><span class="mail">alfonsomejia99@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 224)" onmouseover="cargarMenuOpcionesRow(this, 224)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="225">
+                                <td>Alfonso (Razón Social)</td>
+                                <td>76650504</td>
+                                <td><small>Torres Paz<br>Chiclayo, Lambayeque</small></td>
+                                                                 <td><span class="mail">alfonsomejia99@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 225)" onmouseover="cargarMenuOpcionesRow(this, 225)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="226">
+                                <td>Alfonso (Razón Social)</td>
+                                <td>76650504</td>
+                                <td><small>Torres Paz<br>Chiclayo, Lambayeque</small></td>
+                                                                 <td><span class="mail">alfonsomejia99@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 226)" onmouseover="cargarMenuOpcionesRow(this, 226)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="71">
+                                <td>Andersson (Andersson SAC)</td>
+                                <td>74719421</td>
+                                <td><small>Av mansiche<br>Tujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">ander@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 71)" onmouseover="cargarMenuOpcionesRow(this, 71)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="73">
+                                <td>Andersson (Andersson SAC)</td>
+                                <td>74719421</td>
+                                <td><small>Av mansiche<br>Tujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">ander@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 73)" onmouseover="cargarMenuOpcionesRow(this, 73)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="74">
+                                <td>Andersson (Andersson SAC)</td>
+                                <td>74719421</td>
+                                <td><small>Av mansiche<br>Tujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">ander@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 74)" onmouseover="cargarMenuOpcionesRow(this, 74)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="180">
+                                <td>Andersson (Andersson SAC)</td>
+                                <td>74719421</td>
+                                <td><small>Av mansiche<br>Tujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">ander@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 180)" onmouseover="cargarMenuOpcionesRow(this, 180)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="223">
+                                <td>Andersson (Andersson SAC)</td>
+                                <td>74719421</td>
+                                <td><small>Av mansiche<br>Tujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">ander@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 223)" onmouseover="cargarMenuOpcionesRow(this, 223)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="251">
+                                <td>asdasd (dasda)</td>
+                                <td>215509800018</td>
+                                <td><small>asdasdasd<br>Montevideo, Montevideo</small></td>
+                                                                 <td><span class="mail">asdasdas@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 251)" onmouseover="cargarMenuOpcionesRow(this, 251)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="76">
+                                <td>asdsad (asdas)</td>
+                                <td>44444444</td>
+                                <td><small>sdasda<br>Montevideo, Montevideo</small></td>
+                                                                 <td><span class="mail">lgmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 76)" onmouseover="cargarMenuOpcionesRow(this, 76)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="232">
+                                <td>ASERRADERO ROMANO SRL</td>
+                                <td>20593030</td>
+                                <td><small>HURLINGHAM<br>HURLINGHAM, BUENOS AIRES</small></td>
+                                                                 <td><span class="mail"> - - - </span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 232)" onmouseover="cargarMenuOpcionesRow(this, 232)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="169">
+                                <td>Ayrton (Sociedad Cerrada)</td>
+                                <td>99999999</td>
+                                <td><small>jr Independencia 355<br>Trujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">dany@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 169)" onmouseover="cargarMenuOpcionesRow(this, 169)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="175">
+                                <td>Ayrton (Sociedad Cerrada)</td>
+                                <td>99999999</td>
+                                <td><small>jr Independencia 355<br>Trujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">dany@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 175)" onmouseover="cargarMenuOpcionesRow(this, 175)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="220">
+                                <td>Ayrton (Sociedad Cerrada)</td>
+                                <td>99999999</td>
+                                <td><small>jr Independencia 355<br>Trujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">dany@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 220)" onmouseover="cargarMenuOpcionesRow(this, 220)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="246">
+                                <td>Ayrton (Sociedad Cerrada)</td>
+                                <td>99999999</td>
+                                <td><small>jr Independencia 355<br>Trujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">dany@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 246)" onmouseover="cargarMenuOpcionesRow(this, 246)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="9">
+                                <td>CAMEDUR - I.A.M.P.P</td>
+                                <td>050080930014</td>
+                                <td><small>19 de Abril 720<br>Durazno, Durazno</small></td>
+                                                                 <td><span class="mail"> - - - </span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 9)" onmouseover="cargarMenuOpcionesRow(this, 9)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="127">
+                                <td>carklos (senati)</td>
+                                <td>61582563</td>
+                                <td><small>jdbjdsn<br>Montevideo, Montevideo</small></td>
+                                                                 <td><span class="mail">dndbdn@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 127)" onmouseover="cargarMenuOpcionesRow(this, 127)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="30">
+                                <td>Celso Varas León (Razon Social)</td>
+                                <td>12345678</td>
+                                <td><small>Trujillo<br>Trujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">celso.varas@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 30)" onmouseover="cargarMenuOpcionesRow(this, 30)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="40">
+                                <td>Celso Varas León (Razón Social)</td>
+                                <td>123456789</td>
+                                <td><small>Trujillo<br>Trujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">celso.varas@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 40)" onmouseover="cargarMenuOpcionesRow(this, 40)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="44">
+                                <td>Celso Varas León (Razon Social)</td>
+                                <td>12345678</td>
+                                <td><small>Trujillo<br>Trujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">celso.varas@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 44)" onmouseover="cargarMenuOpcionesRow(this, 44)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="46">
+                                <td>Celso Varas León (Razon Social)</td>
+                                <td>12345678</td>
+                                <td><small>Trujillo<br>Trujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">celso.varas@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 46)" onmouseover="cargarMenuOpcionesRow(this, 46)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="56">
+                                <td>Celso Varas León (Razon Social)</td>
+                                <td>12345678</td>
+                                <td><small>Trujillo<br>Trujillo, La Libertad</small></td>
+                                                                 <td><span class="mail">celso.varas@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 56)" onmouseover="cargarMenuOpcionesRow(this, 56)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="235">
+                                <td>Cliente - Jose (Razon Social - Empresa de servicio)</td>
+                                <td>Numero de identificacion Fiscal 123456789E</td>
+                                <td><small>Direccion Fiscal<br>Ejemplo de Localidad, Ejemplo de Departamento</small></td>
+                                                                 <td><span class="mail">Ingresemailparaenviodefactura@fixed.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 235)" onmouseover="cargarMenuOpcionesRow(this, 235)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="260">
+                                <td>CONSTRUCCIONES PERU (CONSTRUCCIONES PERU S.A.C)</td>
+                                <td>123498765</td>
+                                <td><small>AV. LARCO 734<br>TRUJILLO, LA LIBERTAD</small></td>
+                                                                 <td><span class="mail">CONTACTO@CONSTRUCCIONES.PE</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 260)" onmouseover="cargarMenuOpcionesRow(this, 260)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="263">
+                                <td>CONSTRUCCIONES PERU (CONSTRUCCIONES PERU S.A.C)</td>
+                                <td>123498765</td>
+                                <td><small>AV. LARCO 734<br>TRUJILLO, LA LIBERTAD</small></td>
+                                                                 <td><span class="mail">CONTACTO@CONSTRUCCIONES.PE</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 263)" onmouseover="cargarMenuOpcionesRow(this, 263)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="266">
+                                <td>CONSTRUCCIONES PERU (CONSTRUCCIONES PERU S.A.C)</td>
+                                <td>123498765</td>
+                                <td><small>AV. LARCO 734<br>TRUJILLO, LA LIBERTAD</small></td>
+                                                                 <td><span class="mail">CONTACTO@CONSTRUCCIONES.PE</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 266)" onmouseover="cargarMenuOpcionesRow(this, 266)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="252">
+                                <td>Disco</td>
+                                <td>210274130017</td>
+                                <td><small>Av. Italia 222<br>Montevideo, Montevideo</small></td>
+                                                                 <td><span class="mail">pepe@nada.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 252)" onmouseover="cargarMenuOpcionesRow(this, 252)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="165">
+                                <td>dsdas (dsdasd)</td>
+                                <td>22222222</td>
+                                <td><small>dsdada<br>dasdasdasd, dsdadas</small></td>
+                                                                 <td><span class="mail">asd@gmail</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 165)" onmouseover="cargarMenuOpcionesRow(this, 165)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="4">
+                                <td>Ejemplo SRL</td>
+                                <td>123456701931</td>
+                                <td><small>Batlle y ordoñez<br>Montevideo, Montevideo</small></td>
+                                                                 <td><span class="mail"> - - - </span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 4)" onmouseover="cargarMenuOpcionesRow(this, 4)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="237">
+                                <td>El bienestar SRL</td>
+                                <td>988760808768</td>
+                                <td><small>Perú 2920<br>Montevideo, Montevideo</small></td>
+                                                                 <td><span class="mail">mail@mail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 237)" onmouseover="cargarMenuOpcionesRow(this, 237)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="8">
+                                <td>EL RAYO (NANCY VANZULLI)</td>
+                                <td>214686110016</td>
+                                <td><small>YAGUARON 1624<br>Montevideo, Montevideo</small></td>
+                                                                 <td><span class="mail">nancyvanzulli@adinet.com.uy</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 8)" onmouseover="cargarMenuOpcionesRow(this, 8)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="2">
+                                <td>Empresa SA</td>
+                                <td>123456789098</td>
+                                <td><small><br>Montevideo, Montevideo</small></td>
+                                                                 <td><span class="mail"> - - - </span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 2)" onmouseover="cargarMenuOpcionesRow(this, 2)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="24">
+                                <td>erick</td>
+                                <td>70653378</td>
+                                <td><small>mz j lte 12<br>trujillo, la libertad</small></td>
+                                                                 <td><span class="mail">erick@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 24)" onmouseover="cargarMenuOpcionesRow(this, 24)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="193">
+                                <td>Erick Diaz (Persona Natural)</td>
+                                <td>70509666</td>
+                                <td><small>Ricardo Palma<br>Laredo, La Libertad</small></td>
+                                                                 <td><span class="mail">erick24398@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 193)" onmouseover="cargarMenuOpcionesRow(this, 193)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="194">
+                                <td>Erick Diaz (Persona Natural)</td>
+                                <td>70509666</td>
+                                <td><small>Ricardo Palma<br>Laredo, La Libertad</small></td>
+                                                                 <td><span class="mail">erick24398@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 194)" onmouseover="cargarMenuOpcionesRow(this, 194)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr data-entidad="195">
+                                <td>Erick Diaz (Persona Natural)</td>
+                                <td>70509666</td>
+                                <td><small>Ricardo Palma<br>Laredo, La Libertad</small></td>
+                                                                 <td><span class="mail">erick24398@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 195)" onmouseover="cargarMenuOpcionesRow(this, 195)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                                <tr class="par" data-entidad="196">
+                                <td>Erick Diaz (Persona Natural)</td>
+                                <td>70509666</td>
+                                <td><small>Ricardo Palma<br>Laredo, La Libertad</small></td>
+                                                                 <td><span class="mail">erick24398@gmail.com</span></td>                                <td><button type="button" class="btn btn-icon-toggle concreteText" onclick="cargarMenuOpcionesRow(this, 196)" onmouseover="cargarMenuOpcionesRow(this, 196)"><i class="md md-control-point"></i></button></td>
+                            </tr>
+                                                                        </tbody>
+                </table>
+            </div>
+                </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var cantidadEntidades = 51;
+    var tipoEntidades = "clientes";
+</script>
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"></div>
+
+<style type="text/css">
+    .mail:hover{ cursor: pointer; }
+</style></div>
+<script src="modules/entidades/scripts.js?v=2.5.5"></script>
+	
+					</div>
+				</section>
+			</div>
+						<div id="menubar" class="menubar-inverse  animate">
+				<div class="menubar-fixed-panel">
+					<div>
+						<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);" onclick="actualizarMenuFijo()">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+					<div class="expanded">
+						<span class="text-lg text-bold text-primary ">Fixed</span>
+					</div>
+				</div>
+				<div class="nano has-scrollbar" style="height: 847.312px;"><div class="nano-content" tabindex="0" style="right: -17px;"><div class="menubar-scroll-panel" style="padding-bottom: 1px;">
+					<ul id="main-menu" class="gui-controls"><li id="menuBtnInicio"><a href="?option=inicio"><div class="gui-icon"><i class="md md-home"></i></div><span class="title">Inicio</span></a></li><li id="menuBtnVentas"><a href="?option=facturacion"><div class="gui-icon"><i class="md md-add-shopping-cart"></i></div><span class="title">Ventas</span></a></li><li id="menuBtnCompras"><a href="?option=compras"><div class="gui-icon"><i class="md md-shopping-basket"></i></div><span class="title">Compras</span></a></li><li id="menuBtnClientes" class="gui-folder active expanded"><div class="gui-icon"><i class="md md-group"></i></div><a href="javascript:void(0);"><span class="title">Clientes</span></a><ul><li id="menuBtnClientes" class="active expanded"><a href="?option=entidades&amp;tipo=clientes" class="active"><span class="title">Ver mis clientes</span></a></li><li id="menuBtnClientes"><a href="?option=entidades-cuentas&amp;tipo=clientes"><span class="title">Cuentas clientes</span></a></li><li id="menuBtnClientes"><a href="?option=entidades-recibos-cobro"><span class="title">Recibos clientes</span></a></li></ul></li><li id="menuBtnProveedores" class="gui-folder"><div class="gui-icon"><i class="md md-group"></i></div><a href="javascript:void(0);"><span class="title">Proveedores</span></a><ul><li id="menuBtnProveedores"><a href="?option=entidades&amp;tipo=proveedores"><span class="title">Ver mis proveedores</span></a></li><li id="menuBtnProveedores"><a href="?option=entidades-cuentas&amp;tipo=proveedores"><span class="title">Cuentas proveedores</span></a></li><li id="menuBtnProveedores"><a href="?option=entidades-recibos-pago"><span class="title">Recibos proveedores</span></a></li></ul></li><li id="menuBtnCentro-de-costos"><a href="?option=centro-costos"><div class="gui-icon"><i class="glyphicon glyphicon-list"></i></div><span class="title">Centro de costos</span></a></li><li id="menuBtnEstadsticas-centro-costos"><a href="?option=estadisticas-centro-costos"><div class="gui-icon"><i class="fa fa-area-chart"></i></div><span class="title">Estadsticas centro costos</span></a></li><li id="menuBtnEstadisticas" class="gui-folder"><div class="gui-icon"><i class="fa fa-line-chart"></i></div><a href="javascript:void(0);"><span class="title">Estadísticas</span></a><ul><li id="menuBtnEstadisticas"><a href="?option=estadisticas"><span class="title">Venta</span></a></li><li id="menuBtnEstadisticas"><a href="?option=estadisticas-gastos"><span class="title">Compra</span></a></li></ul></li><li id="menuBtnFactura-electronica" class="gui-folder"><div class="gui-icon"><i class="md md-backup"></i></div><a href="javascript:void(0);"><span class="title">Factura electrónica</span></a><ul><li id="menuBtnFactura-electronica"><a href="?option=opciones-cfe-cae"><span class="title">CAE</span></a></li><li id="menuBtnFactura-electronica"><a href="?option=opciones-cfe-certificados"><span class="title">Firma electrónica</span></a></li><li id="menuBtnFactura-electronica"><a href="?option=cfe-recibidos"><span class="title">CFE recibidos</span></a></li></ul></li><li id="menuBtnOpciones" class="gui-folder"><div class="gui-icon"><i class="fa fa-cogs"></i></div><a href="javascript:void(0);"><span class="title">Opciones</span></a><ul><li id="menuBtnOpciones"><a href="?option=usuarios"><span class="title">Usuarios</span></a></li><li id="menuBtnOpciones"><a href="?option=opciones"><span class="title">Generales</span></a></li><li id="menuBtnOpciones"><a href="?option=opciones-venta"><span class="title">Venta</span></a></li><li id="menuBtnOpciones"><a href="?option=opciones-compras"><span class="title">Compra</span></a></li><li class="gui-folder"><a href="javascript:void(0);"><span class="title">Varias</span></a><ul><li id="menuBtnOpciones"><a href="?option=opciones-medios-pago"><span class="title">Medios de pago</span></a></li><li id="menuBtnOpciones"><a href="?option=usuarios-roles"><span class="title">Roles de usuario</span></a></li></ul></li></ul></li></ul>				</div></div><div class="nano-pane" style="display: none;"><div class="nano-slider" style="height: 830px; transform: translate(0px, 0px);"></div></div></div>
+			</div>
+		</div>
+		<input type="hidden" id="version" value="2.5.5" autocomplete="off">
+		<input type="hidden" id="urlPublica" value="https://sistema.fixed.uy/" autocomplete="off">
+		<iframe id="iFrameDescarga" name="iFrameDescarga" style="display: none;"></iframe>
+        
+
+	    	<span style="position: absolute; left: 50%; width: 600px; text-align: center; margin-left: -300px;"><a href="legal/" target="_blank">Legal | Términos y condiciones | Política de privacidad | Tratamiento de datos personales</a></span>
+	
+        <div id="MenuOpcionesRow" style="position: absolute; z-index: 9999; padding: 10px;"></div>
+        			
+	<script type="text/javascript">
+	$(function(){
+		$('#preLoader').hide();
+	});
+    $(document).on("submit", "form", function(event){
+        $(window).off('beforeunload');
+        if($(this).prop('target') != '_blank'){
+			$('#preLoader').show();
+    	}
+    });
+	$(window).on('beforeunload', function(){
+		if($("div.modal.fade.in form" ).length && $('#preLoader').is(":hidden")){
+			return 'Tienes una ventana abierta, seguro que quieres salir?';
+		};
+		$('#preLoader').show();	
+	});
+
+	var tasasIva = [];
+	tasasIva[1] = new Object(); tasasIva[1].id = 1; tasasIva[1].valor = 0; tasasIva[1].nombre = "Tasa exportacion"; tasasIva[1].sigla = "Expor"; tasasIva[1].activo_productos = 1; tasasIva[1].activo_servicios = 1;tasasIva[2] = new Object(); tasasIva[2].id = 2; tasasIva[2].valor = 0; tasasIva[2].nombre = "Tasa exenta"; tasasIva[2].sigla = "Exent"; tasasIva[2].activo_productos = 1; tasasIva[2].activo_servicios = 1;tasasIva[3] = new Object(); tasasIva[3].id = 3; tasasIva[3].valor = 10; tasasIva[3].nombre = "Tasa Minima"; tasasIva[3].sigla = "Mínim"; tasasIva[3].activo_productos = 1; tasasIva[3].activo_servicios = 1;tasasIva[4] = new Object(); tasasIva[4].id = 4; tasasIva[4].valor = 22; tasasIva[4].nombre = "Tasa basica"; tasasIva[4].sigla = "Básic"; tasasIva[4].activo_productos = 1; tasasIva[4].activo_servicios = 1;tasasIva[5] = new Object(); tasasIva[5].id = 5; tasasIva[5].valor = 0; tasasIva[5].nombre = "No facturable"; tasasIva[5].sigla = "NoFac"; tasasIva[5].activo_productos = 0; tasasIva[5].activo_servicios = 0;
+	var tiposDocumentos = [];
+	tiposDocumentos[1] = new Object();
+			tiposDocumentos[1].id = 1;
+			tiposDocumentos[1].nombre = "Venta";
+			tiposDocumentos[1].prefijo = "V";tiposDocumentos[1].campos = [];tiposDocumentos[2] = new Object();
+			tiposDocumentos[2].id = 2;
+			tiposDocumentos[2].nombre = "Compra";
+			tiposDocumentos[2].prefijo = "C";tiposDocumentos[2].campos = [];tiposDocumentos[3] = new Object();
+			tiposDocumentos[3].id = 3;
+			tiposDocumentos[3].nombre = "Recibo cliente";
+			tiposDocumentos[3].prefijo = "REC";tiposDocumentos[3].campos = [];tiposDocumentos[4] = new Object();
+			tiposDocumentos[4].id = 4;
+			tiposDocumentos[4].nombre = "Recibo compra";
+			tiposDocumentos[4].prefijo = "RCO";tiposDocumentos[4].campos = [];tiposDocumentos[5] = new Object();
+			tiposDocumentos[5].id = 5;
+			tiposDocumentos[5].nombre = "Remito Ingreso";
+			tiposDocumentos[5].prefijo = "RemIng";tiposDocumentos[5].campos = [];tiposDocumentos[6] = new Object();
+			tiposDocumentos[6].id = 6;
+			tiposDocumentos[6].nombre = "Remito Transferencia";
+			tiposDocumentos[6].prefijo = "RemTra";tiposDocumentos[6].campos = [];tiposDocumentos[7] = new Object();
+			tiposDocumentos[7].id = 7;
+			tiposDocumentos[7].nombre = "Remito Salida";
+			tiposDocumentos[7].prefijo = "RemSal";tiposDocumentos[7].campos = [];tiposDocumentos[8] = new Object();
+			tiposDocumentos[8].id = 8;
+			tiposDocumentos[8].nombre = "Presupuesto";
+			tiposDocumentos[8].prefijo = "P";tiposDocumentos[8].campos = [];tiposDocumentos[9] = new Object();
+			tiposDocumentos[9].id = 9;
+			tiposDocumentos[9].nombre = "Devolucin";
+			tiposDocumentos[9].prefijo = "DEV";tiposDocumentos[9].campos = [];tiposDocumentos[10] = new Object();
+			tiposDocumentos[10].id = 10;
+			tiposDocumentos[10].nombre = "Ajuste";
+			tiposDocumentos[10].prefijo = "AJ";tiposDocumentos[10].campos = JSON.parse("[]");tiposDocumentos[11] = new Object();
+			tiposDocumentos[11].id = 11;
+			tiposDocumentos[11].nombre = "Resguardo";
+			tiposDocumentos[11].prefijo = "RES";tiposDocumentos[11].campos = [];tiposDocumentos[12] = new Object();
+			tiposDocumentos[12].id = 12;
+			tiposDocumentos[12].nombre = "Resguardo recibido";
+			tiposDocumentos[12].prefijo = "RES RECIBIDO";tiposDocumentos[12].campos = [];
+	var cotizacionesUI = [];
+	cotizacionesUI[2017] = 3.507;
+	cotizacionesUI[2018] = 3.727;
+	cotizacionesUI[2019] = 3.727;
+	cotizacionesUI[2020] = 4.3659;
+	cotizacionesUI[2021] = 4.7846;
+	cotizacionesUI[2022] = 5.1608; //Cierre del 2021
+	cotizacionesUI[2023] = 5.6023;
+
+	var paises = [];
+
+	</script>
+
+			<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147312117-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-147312117-1');
+		</script>
+	
+			<script>
+			$( document ).ready(function() {
+				function initFreshChat() {
+											var restoreId = null;
+										window.fcWidget.init({
+						token: "1abc2be5-256f-415f-8182-bc53fee258e3",
+						host: "https://wchat.freshchat.com",
+				    	externalId: '85.1',
+				    	restoreId: restoreId ? restoreId : null
+					});
+					window.fcWidget.user.setFirstName("Admin");
+					window.fcWidget.user.setLastName("Fixed");
+					window.fcWidget.user.setEmail("info@fixed.uy");
+					window.fcWidget.user.setProperties({
+						id_empresa: "85",
+						nombre_empresa: "Demo - De la libreta a la computadora",
+						razon_social: "Demo - De la libreta a la computadora",
+						RUT: ""
+					});
+									}
+
+				(function(d, id) {
+				    var fcJS;
+				    if (d.getElementById(id)) {
+				        initFreshChat();
+				        return;
+				    }
+				    fcJS = d.createElement('script');
+				    fcJS.id = id;
+				    fcJS.async = true;
+				    fcJS.src = 'https://wchat.freshchat.com/js/widget.js';
+				    fcJS.onload = initFreshChat;
+				    d.head.appendChild(fcJS);
+				}(document, 'freshchat-js-sdk'));
+		    });
+
+		</script>
+		
+
+<div id="device-breakpoints"><div class="device-xs visible-xs" data-breakpoint="xs"></div><div class="device-sm visible-sm" data-breakpoint="sm"></div><div class="device-md visible-md" data-breakpoint="md"></div><div class="device-lg visible-lg" data-breakpoint="lg"></div></div><div id="fc_frame" class="fc-widget-normal" style="bottom: 15px; right: 15px;"><iframe id="fc_widget" name="fc_widget" title="Chat" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div><div id="fc_push_frame"><iframe id="fc_push" src="https://fixed.webpush.freshchat.com/index.html?ref=aHR0cHM6Ly9zaXN0ZW1hLmZpeGVkLnV5" title="Chat" frameborder="0"></iframe></div></body></html>

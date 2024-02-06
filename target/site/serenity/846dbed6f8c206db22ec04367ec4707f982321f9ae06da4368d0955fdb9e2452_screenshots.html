@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="3cba1fc0340c99d2aab499607ba494f655cb8a8c88a0f391b082c4f8c43950e6.html">Sistemafixed</a></span>
+                > <span class="truncate-60"><a
+                    href="846dbed6f8c206db22ec04367ec4707f982321f9ae06da4368d0955fdb9e2452.html">A&ntilde;adir un cliente en el sistema Fixed </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-10-2023 12:45</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Sistemafixed</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="1239bb42260f87479d6851c4e3cc215b4fe26dc40bb3433876872475ea00158b.html">FIXED ADD CLIENT
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">A&ntilde;adir un cliente en el sistema Fixed
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="32fb2c104ea063426659e5eb4ccce712ec6cf9ea4eee9c8917af57be4cd35c33.png" title=" And hacemos click en el &iacute;cono superior izquierdo para desplegar men&uacute;" width="1920"/>
+                <img src="32fb2c104ea063426659e5eb4ccce712ec6cf9ea4eee9c8917af57be4cd35c33.png" title=" Hacemos click en el boton hamburguesa" width="1920"/>
+                <img src="32fb2c104ea063426659e5eb4ccce712ec6cf9ea4eee9c8917af57be4cd35c33.png" title=" And hacemos click en el &iacute;cono superior izquierdo para desplegar men&uacute; (completed)" width="1920"/>
+                <img src="1c7ed689167ef0d46070d3edb1706908e2e108ed039561b01cd809fb5546a07f.png" title=" Then nos muestra el men&uacute; y hacemos click en el men&uacute; Clientes" width="1920"/>
+                <img src="1c7ed689167ef0d46070d3edb1706908e2e108ed039561b01cd809fb5546a07f.png" title=" Nos muestra el Men&uacute;Y hacemos click en el men&uacute; clientes" width="1920"/>
+                <img src="1c7ed689167ef0d46070d3edb1706908e2e108ed039561b01cd809fb5546a07f.png" title=" Then nos muestra el men&uacute; y hacemos click en el men&uacute; Clientes (completed)" width="1920"/>
+                <img src="18cf583a13dae41c5a1e5602e642e07c1c5a5ef9636f929de2b8699d0aaa2a7f.png" title=" And hacemos click en el submenu Ver mis clientes" width="1920"/>
+                <img src="18cf583a13dae41c5a1e5602e642e07c1c5a5ef9636f929de2b8699d0aaa2a7f.png" title=" Hacemos click en el submenu ver mis clientes" width="1920"/>
+                <img src="18cf583a13dae41c5a1e5602e642e07c1c5a5ef9636f929de2b8699d0aaa2a7f.png" title=" And hacemos click en el submenu Ver mis clientes (completed)" width="1920"/>
+                <img src="24be7dba10b805e45ae28edd9a8ebc8dd344d7819c67bb41602ebf7a61e6b791.png" title=" And hacemos click en el boton Agregar Cliente" width="1920"/>
+                <img src="62b5507438dd2720ed789859757cc2c46e91877ee3ca6a1e99abc18ce6dd6d4d.png" title=" And verificamos que aparezca el modal para el registro de nuevo cliente" width="1920"/>
+                <img src="8974e94955a16e533373e43fd01082835decf8227b2e54bd259b892f6829fb62.png" title=" And hacemos click en el dropdown y seleccionamos Otros en Tipo de Documento" width="1920"/>
+                <img src="32aa6bf49b80724e1a16fa9ab70c9e30bbabd12c0461101d6e741703c8b3879d.png" title=" And se completa el campo con el valor &quot;Gabriela&quot; en el campo &quot;Nombre&quot;" width="1920"/>
+                <img src="5506c4a33f31e9f715e73860529d41df2a92f25f254b30425b3c9857dbe4b339.png" title=" And hacemos click en el boton Agregar" width="1920"/>
+                <img src="936c29188bceebdb5eca0159fb7970baee337c303eac360cac9d6b9431edafd3.png" title=" And validamos que se haya creado el cliente correctamente: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.54</span>
+</div>
+</body>
+</html>

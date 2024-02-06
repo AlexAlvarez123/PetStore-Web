@@ -1,0 +1,35 @@
+@Saucedemo @FlujoDeCompra
+Feature: Prueba de compra
+
+  Scenario Outline: Añadir un cliente en el sistema Fixed Parametrizado [90m# src/test/resources/web/Saucedemo.feature:5[0m
+    [36mGiven abro la pagina de saucedemo con el navegador edge[0m
+    [36mAnd ingreso "<usuario>" en el campo Username del login[0m
+    [36mAnd ingreso "<password>" en el campo Password del login[0m
+    [36mAnd obtengo un login exitoso[0m
+    [36mWhen Agrego el primer producto al carrito "<primerIten>"[0m
+    [36mAnd Agrego el segundo producto al carrito "<segundoIten>"[0m
+    [36mAnd Visualizo que se agregaron correctamente[0m
+    [36mAnd Hago click en el botton checkout[0m
+    [36mAnd ingreso mi "<firstname>" en el campo de nombre[0m
+    [36mAnd ingreso mi "<lastname>" en el campo de apellido[0m
+    [36mAnd ingreso mi "<zipcode>" en el campo de codigo postal[0m
+    [36mAnd hago click en el boton finalizar[0m
+    [36mThen valido la confirmación de la compra con el mensaje "<mensajeFinal>"[0m
+
+    Examples: 
+
+  @Saucedemo @FlujoDeCompra
+  Scenario Outline: Añadir un cliente en el sistema Fixed Parametrizado                 [90m# src/test/resources/web/Saucedemo.feature:21[0m
+    [32mGiven [0m[32mabro la pagina de saucedemo con el navegador edge[0m                             [90m# SaucedemoStepDefinition.abro_la_pagina_de_saucedemo_con_el_navegador_edge()[0m
+    [32mAnd [0m[32mingreso "[0m[32m[1mstandard_user[0m[32m" en el campo Username del login[0m                          [90m# SaucedemoStepDefinition.ingreso_en_el_campo_username_del_login(String)[0m
+    [32mAnd [0m[32mingreso "[0m[32m[1msecret_sauce[0m[32m" en el campo Password del login[0m                           [90m# SaucedemoStepDefinition.ingreso_en_el_campo_password_del_login(String)[0m
+    [32mAnd [0m[32mobtengo un login exitoso[0m                                                        [90m# SaucedemoStepDefinition.obtengo_un_login_exitoso()[0m
+    [32mWhen [0m[32mAgrego el primer producto al carrito "[0m[32m[1mSauce Labs Backpack[0m[32m"[0m                     [90m# SaucedemoStepDefinition.agregoElPrimerProductoAlCarrito(String)[0m
+    [32mAnd [0m[32mAgrego el segundo producto al carrito "[0m[32m[1mSauce Labs Bolt T-Shirt[0m[32m"[0m                 [90m# SaucedemoStepDefinition.agregoElSegundoProductoAlCarrito(String)[0m
+    [32mAnd [0m[32mVisualizo que se agregaron correctamente[0m                                        [90m# SaucedemoStepDefinition.Visualizo_que_se_agregaron_correctamente()[0m
+    [32mAnd [0m[32mHago click en el botton checkout[0m                                                [90m# SaucedemoStepDefinition.Hago_click_en_el_botton_checkout()[0m
+    [32mAnd [0m[32mingreso mi "[0m[32m[1malex[0m[32m" en el campo de nombre[0m                                         [90m# SaucedemoStepDefinition.ingreso_mi_en_el_campo_de_nombre(String)[0m
+    [32mAnd [0m[32mingreso mi "[0m[32m[1malvarez[0m[32m" en el campo de apellido[0m                                    [90m# SaucedemoStepDefinition.ingreso_mi_en_el_campo_de_apellido(String)[0m
+    [32mAnd [0m[32mingreso mi "[0m[32m[1m04004[0m[32m" en el campo de codigo postal[0m                                 [90m# SaucedemoStepDefinition.ingreso_mi_en_el_campo_de_codigo_postal(String)[0m
+    [32mAnd [0m[32mhago click en el boton finalizar[0m                                                [90m# SaucedemoStepDefinition.hago_click_en_el_boton_finalizar()[0m
+    [32mThen [0m[32mvalido la confirmación de la compra con el mensaje "[0m[32m[1mThank you for your order![0m[32m"[0m [90m# SaucedemoStepDefinition.valido_la_confirmación_de_la_compra_con_el_mensaje(String)[0m
